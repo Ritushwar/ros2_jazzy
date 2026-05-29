@@ -1,0 +1,57 @@
+[0.000000] (-) TimerEvent: {}
+[0.000218] (demo_pkg) JobQueued: {'identifier': 'demo_pkg', 'dependencies': OrderedDict()}
+[0.000438] (demo_pkg) JobStarted: {'identifier': 'demo_pkg'}
+[0.099856] (-) TimerEvent: {}
+[0.200124] (-) TimerEvent: {}
+[0.300365] (-) TimerEvent: {}
+[0.400613] (-) TimerEvent: {}
+[0.500913] (-) TimerEvent: {}
+[0.601140] (-) TimerEvent: {}
+[0.696155] (demo_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/demo_pkg', 'build', '--build-base', '/home/ritu/jazzy_ws/build/demo_pkg/build', 'install', '--record', '/home/ritu/jazzy_ws/build/demo_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ritu/jazzy_ws/src/demo_pkg', 'env': {'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ritu', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ritu', 'OLDPWD': '/home/ritu/jazzy_ws/src/demo_pkg/demo_pkg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2181', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ritu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ritu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ritu/intelFPGA/20.1/modelsim_ase/bin:/home/ritu/intelFPGA/20.1/modelsim_ase/bin', 'SESSION_MANAGER': 'local/ritushwar:@/tmp/.ICE-unix/2004,unix/ritushwar:/tmp/.ICE-unix/2004', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a07abdfb_76ac_4324_ad5d_607bab8bdb34', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.535ZP3', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ritu/jazzy_ws/build/demo_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ritu/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ritu/jazzy_ws/build/demo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.701230] (-) TimerEvent: {}
+[0.801444] (-) TimerEvent: {}
+[0.894721] (demo_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.894946] (demo_pkg) StdoutLine: {'line': b'creating ../../build/demo_pkg/demo_pkg.egg-info\n'}
+[0.901529] (-) TimerEvent: {}
+[0.910195] (demo_pkg) StdoutLine: {'line': b'writing ../../build/demo_pkg/demo_pkg.egg-info/PKG-INFO\n'}
+[0.910395] (demo_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/demo_pkg/demo_pkg.egg-info/dependency_links.txt\n'}
+[0.910525] (demo_pkg) StdoutLine: {'line': b'writing entry points to ../../build/demo_pkg/demo_pkg.egg-info/entry_points.txt\n'}
+[0.910623] (demo_pkg) StdoutLine: {'line': b'writing requirements to ../../build/demo_pkg/demo_pkg.egg-info/requires.txt\n'}
+[0.910697] (demo_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/demo_pkg/demo_pkg.egg-info/top_level.txt\n'}
+[0.910770] (demo_pkg) StdoutLine: {'line': b"writing manifest file '../../build/demo_pkg/demo_pkg.egg-info/SOURCES.txt'\n"}
+[0.940356] (demo_pkg) StdoutLine: {'line': b"reading manifest file '../../build/demo_pkg/demo_pkg.egg-info/SOURCES.txt'\n"}
+[0.940812] (demo_pkg) StdoutLine: {'line': b"writing manifest file '../../build/demo_pkg/demo_pkg.egg-info/SOURCES.txt'\n"}
+[0.940919] (demo_pkg) StdoutLine: {'line': b'running build\n'}
+[0.940999] (demo_pkg) StdoutLine: {'line': b'running build_py\n'}
+[0.941049] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/build/demo_pkg/build\n'}
+[0.941119] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/build/demo_pkg/build/lib\n'}
+[0.941188] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg\n'}
+[0.941257] (demo_pkg) StdoutLine: {'line': b'copying demo_pkg/__init__.py -> /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg\n'}
+[0.941326] (demo_pkg) StdoutLine: {'line': b'copying demo_pkg/publisher_python.py -> /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg\n'}
+[0.941396] (demo_pkg) StdoutLine: {'line': b'copying demo_pkg/subscriber_python.py -> /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg\n'}
+[0.941511] (demo_pkg) StdoutLine: {'line': b'running install\n'}
+[0.946599] (demo_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.961280] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg\n'}
+[0.961385] (demo_pkg) StdoutLine: {'line': b'copying /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg/__init__.py -> /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg\n'}
+[0.961468] (demo_pkg) StdoutLine: {'line': b'copying /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg/publisher_python.py -> /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg\n'}
+[0.961537] (demo_pkg) StdoutLine: {'line': b'copying /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg/subscriber_python.py -> /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg\n'}
+[0.961912] (demo_pkg) StdoutLine: {'line': b'byte-compiling /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg/__init__.py to __init__.cpython-312.pyc\n'}
+[0.962029] (demo_pkg) StdoutLine: {'line': b'byte-compiling /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg/publisher_python.py to publisher_python.cpython-312.pyc\n'}
+[0.962512] (demo_pkg) StdoutLine: {'line': b'byte-compiling /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg/subscriber_python.py to subscriber_python.cpython-312.pyc\n'}
+[0.962839] (demo_pkg) StdoutLine: {'line': b'running install_data\n'}
+[0.962914] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index\n'}
+[0.962985] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index/resource_index\n'}
+[0.963053] (demo_pkg) StdoutLine: {'line': b'creating /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index/resource_index/packages\n'}
+[0.963121] (demo_pkg) StdoutLine: {'line': b'copying resource/demo_pkg -> /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index/resource_index/packages\n'}
+[0.963189] (demo_pkg) StdoutLine: {'line': b'copying package.xml -> /home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg\n'}
+[0.963259] (demo_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.979259] (demo_pkg) StdoutLine: {'line': b'Copying ../../build/demo_pkg/demo_pkg.egg-info to /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg-0.0.0-py3.12.egg-info\n'}
+[0.979829] (demo_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.001623] (-) TimerEvent: {}
+[1.078282] (demo_pkg) StdoutLine: {'line': b'Installing publisher script to /home/ritu/jazzy_ws/install/demo_pkg/lib/demo_pkg\n'}
+[1.078434] (demo_pkg) StdoutLine: {'line': b'Installing subscriber script to /home/ritu/jazzy_ws/install/demo_pkg/lib/demo_pkg\n'}
+[1.078527] (demo_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ritu/jazzy_ws/build/demo_pkg/install.log'\n"}
+[1.101727] (-) TimerEvent: {}
+[1.112665] (demo_pkg) CommandEnded: {'returncode': 0}
+[1.124725] (demo_pkg) JobEnded: {'identifier': 'demo_pkg', 'rc': 0}
+[1.125275] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+Invoking command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ritu/jazzy_ws/build/yahboom_rosmaster_description -- -j4 -l4
+Invoked command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ritu/jazzy_ws/build/yahboom_rosmaster_description -- -j4 -l4

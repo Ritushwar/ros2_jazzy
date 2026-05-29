@@ -1,0 +1,41 @@
+[0.696s] Invoking command in '/home/ritu/jazzy_ws/src/demo_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ritu/jazzy_ws/build/demo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_pkg build --build-base /home/ritu/jazzy_ws/build/demo_pkg/build install --record /home/ritu/jazzy_ws/build/demo_pkg/install.log --single-version-externally-managed install_data
+[0.894s] running egg_info
+[0.895s] creating ../../build/demo_pkg/demo_pkg.egg-info
+[0.910s] writing ../../build/demo_pkg/demo_pkg.egg-info/PKG-INFO
+[0.910s] writing dependency_links to ../../build/demo_pkg/demo_pkg.egg-info/dependency_links.txt
+[0.910s] writing entry points to ../../build/demo_pkg/demo_pkg.egg-info/entry_points.txt
+[0.910s] writing requirements to ../../build/demo_pkg/demo_pkg.egg-info/requires.txt
+[0.910s] writing top-level names to ../../build/demo_pkg/demo_pkg.egg-info/top_level.txt
+[0.910s] writing manifest file '../../build/demo_pkg/demo_pkg.egg-info/SOURCES.txt'
+[0.940s] reading manifest file '../../build/demo_pkg/demo_pkg.egg-info/SOURCES.txt'
+[0.940s] writing manifest file '../../build/demo_pkg/demo_pkg.egg-info/SOURCES.txt'
+[0.941s] running build
+[0.941s] running build_py
+[0.941s] creating /home/ritu/jazzy_ws/build/demo_pkg/build
+[0.941s] creating /home/ritu/jazzy_ws/build/demo_pkg/build/lib
+[0.941s] creating /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg
+[0.941s] copying demo_pkg/__init__.py -> /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg
+[0.941s] copying demo_pkg/publisher_python.py -> /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg
+[0.941s] copying demo_pkg/subscriber_python.py -> /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg
+[0.941s] running install
+[0.946s] running install_lib
+[0.961s] creating /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg
+[0.961s] copying /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg/__init__.py -> /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg
+[0.961s] copying /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg/publisher_python.py -> /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg
+[0.961s] copying /home/ritu/jazzy_ws/build/demo_pkg/build/lib/demo_pkg/subscriber_python.py -> /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg
+[0.962s] byte-compiling /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg/__init__.py to __init__.cpython-312.pyc
+[0.962s] byte-compiling /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg/publisher_python.py to publisher_python.cpython-312.pyc
+[0.962s] byte-compiling /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg/subscriber_python.py to subscriber_python.cpython-312.pyc
+[0.962s] running install_data
+[0.963s] creating /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index
+[0.963s] creating /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index/resource_index
+[0.963s] creating /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index/resource_index/packages
+[0.963s] copying resource/demo_pkg -> /home/ritu/jazzy_ws/install/demo_pkg/share/ament_index/resource_index/packages
+[0.963s] copying package.xml -> /home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg
+[0.963s] running install_egg_info
+[0.979s] Copying ../../build/demo_pkg/demo_pkg.egg-info to /home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages/demo_pkg-0.0.0-py3.12.egg-info
+[0.979s] running install_scripts
+[1.078s] Installing publisher script to /home/ritu/jazzy_ws/install/demo_pkg/lib/demo_pkg
+[1.078s] Installing subscriber script to /home/ritu/jazzy_ws/install/demo_pkg/lib/demo_pkg
+[1.078s] writing list of installed files to '/home/ritu/jazzy_ws/build/demo_pkg/install.log'
+[1.112s] Invoked command in '/home/ritu/jazzy_ws/src/demo_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ritu/jazzy_ws/build/demo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_pkg build --build-base /home/ritu/jazzy_ws/build/demo_pkg/build install --record /home/ritu/jazzy_ws/build/demo_pkg/install.log --single-version-externally-managed install_data

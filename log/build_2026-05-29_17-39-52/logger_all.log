@@ -1,0 +1,266 @@
+[0.095s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.095s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x760477499fd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x760477499a00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x760477499a00>>, mixin_verb=('build',))
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.124s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ritu/jazzy_ws'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_pkg) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/demo_pkg' with type 'ros.ament_python' and name 'demo_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster' with type 'ros.ament_cmake' and name 'yahboom_rosmaster'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_description' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_description'
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ritu/jazzy_ws/install
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/ritu/ros2_ws/install
+[0.170s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 417 installed packages in /opt/ros/jazzy
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'cmake_target' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'demo_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.211s] DEBUG:colcon.colcon_core.verb:Building package 'demo_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ritu/jazzy_ws/build/demo_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ritu/jazzy_ws/install/demo_pkg', 'merge_install': False, 'path': '/home/ritu/jazzy_ws/src/demo_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_target' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.211s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description', 'merge_install': False, 'path': '/home/ritu/jazzy_ws/src/yahboom_rosmaster/yahboom_rosmaster_description', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ritu/jazzy_ws/build/yahboom_rosmaster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ritu/jazzy_ws/install/yahboom_rosmaster', 'merge_install': False, 'path': '/home/ritu/jazzy_ws/src/yahboom_rosmaster/yahboom_rosmaster', 'symlink_install': False, 'test_result_base': None}
+[0.212s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.213s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.213s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ritu/jazzy_ws/src/yahboom_rosmaster/yahboom_rosmaster_description' with build type 'ament_cmake'
+[0.213s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ritu/jazzy_ws/src/yahboom_rosmaster/yahboom_rosmaster_description'
+[0.216s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.217s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.217s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.222s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ritu/jazzy_ws/src/demo_pkg' with build type 'ament_python'
+[0.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('demo_pkg', 'ament_prefix_path')
+[0.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/hook/ament_prefix_path.ps1'
+[0.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/hook/ament_prefix_path.dsv'
+[0.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/hook/ament_prefix_path.sh'
+[0.223s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.223s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ritu/jazzy_ws/build/yahboom_rosmaster_description -- -j4 -l4
+[0.395s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ritu/jazzy_ws/src/demo_pkg'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ritu/jazzy_ws/build/yahboom_rosmaster_description -- -j4 -l4
+[0.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ritu/jazzy_ws/build/yahboom_rosmaster_description
+[0.420s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_description)
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ritu/jazzy_ws/build/yahboom_rosmaster_description
+[0.423s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description' for CMake module files
+[0.424s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description' for CMake config files
+[0.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_description', 'cmake_prefix_path')
+[0.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.ps1'
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.dsv'
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.sh'
+[0.425s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/bin'
+[0.425s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/lib/pkgconfig/yahboom_rosmaster_description.pc'
+[0.425s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/lib/python3.12/site-packages'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/bin'
+[0.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.ps1'
+[0.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.dsv'
+[0.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.sh'
+[0.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.bash'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.zsh'
+[0.428s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/colcon-core/packages/yahboom_rosmaster_description)
+[0.429s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_description)
+[0.429s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description' for CMake module files
+[0.429s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description' for CMake config files
+[0.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_description', 'cmake_prefix_path')
+[0.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.ps1'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.dsv'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.sh'
+[0.430s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/bin'
+[0.430s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/lib/pkgconfig/yahboom_rosmaster_description.pc'
+[0.430s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/lib/python3.12/site-packages'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/bin'
+[0.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.ps1'
+[0.431s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.dsv'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.sh'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.bash'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.zsh'
+[0.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ritu/jazzy_ws/install/yahboom_rosmaster_description/share/colcon-core/packages/yahboom_rosmaster_description)
+[0.433s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ritu/jazzy_ws/src/yahboom_rosmaster/yahboom_rosmaster' with build type 'ament_cmake'
+[0.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ritu/jazzy_ws/src/yahboom_rosmaster/yahboom_rosmaster'
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster': CMAKE_PREFIX_PATH=/home/ritu/jazzy_ws/install/yahboom_rosmaster_description:/home/ritu/jazzy_ws/install/yahboom_rosmaster:/home/ritu/ros2_ws/install/mycobot_ros2:/home/ritu/ros2_ws/install/mycobot_system_tests:/home/ritu/ros2_ws/install/mycobot_moveit_config:/home/ritu/ros2_ws/install/mycobot_gazebo:/home/ritu/ros2_ws/install/mycobot_description:/home/ritu/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ritu/jazzy_ws/build/yahboom_rosmaster -- -j4 -l4
+[0.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster' returned '0': CMAKE_PREFIX_PATH=/home/ritu/jazzy_ws/install/yahboom_rosmaster_description:/home/ritu/jazzy_ws/install/yahboom_rosmaster:/home/ritu/ros2_ws/install/mycobot_ros2:/home/ritu/ros2_ws/install/mycobot_system_tests:/home/ritu/ros2_ws/install/mycobot_moveit_config:/home/ritu/ros2_ws/install/mycobot_gazebo:/home/ritu/ros2_ws/install/mycobot_description:/home/ritu/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ritu/jazzy_ws/build/yahboom_rosmaster -- -j4 -l4
+[0.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster': CMAKE_PREFIX_PATH=/home/ritu/jazzy_ws/install/yahboom_rosmaster_description:/home/ritu/jazzy_ws/install/yahboom_rosmaster:/home/ritu/ros2_ws/install/mycobot_ros2:/home/ritu/ros2_ws/install/mycobot_system_tests:/home/ritu/ros2_ws/install/mycobot_moveit_config:/home/ritu/ros2_ws/install/mycobot_gazebo:/home/ritu/ros2_ws/install/mycobot_description:/home/ritu/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ritu/jazzy_ws/build/yahboom_rosmaster
+[0.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster)
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster' for CMake module files
+[0.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ritu/jazzy_ws/build/yahboom_rosmaster' returned '0': CMAKE_PREFIX_PATH=/home/ritu/jazzy_ws/install/yahboom_rosmaster_description:/home/ritu/jazzy_ws/install/yahboom_rosmaster:/home/ritu/ros2_ws/install/mycobot_ros2:/home/ritu/ros2_ws/install/mycobot_system_tests:/home/ritu/ros2_ws/install/mycobot_moveit_config:/home/ritu/ros2_ws/install/mycobot_gazebo:/home/ritu/ros2_ws/install/mycobot_description:/home/ritu/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ritu/jazzy_ws/install/demo_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ritu/jazzy_ws/build/yahboom_rosmaster
+[0.490s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster' for CMake config files
+[0.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster', 'cmake_prefix_path')
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.ps1'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.dsv'
+[0.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.sh'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/bin'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/lib/pkgconfig/yahboom_rosmaster.pc'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/lib/python3.12/site-packages'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/bin'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.ps1'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.dsv'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.sh'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.bash'
+[0.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.zsh'
+[0.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/colcon-core/packages/yahboom_rosmaster)
+[0.493s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster)
+[0.493s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster' for CMake module files
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster' for CMake config files
+[0.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster', 'cmake_prefix_path')
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.sh'
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/bin'
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/lib/pkgconfig/yahboom_rosmaster.pc'
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/lib/python3.12/site-packages'
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/yahboom_rosmaster/bin'
+[0.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.ps1'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.dsv'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.sh'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.bash'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.zsh'
+[0.497s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ritu/jazzy_ws/install/yahboom_rosmaster/share/colcon-core/packages/yahboom_rosmaster)
+[0.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ritu/jazzy_ws/src/demo_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ritu/jazzy_ws/build/demo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_pkg build --build-base /home/ritu/jazzy_ws/build/demo_pkg/build install --record /home/ritu/jazzy_ws/build/demo_pkg/install.log --single-version-externally-managed install_data
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg' for CMake module files
+[1.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ritu/jazzy_ws/src/demo_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ritu/jazzy_ws/build/demo_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_pkg build --build-base /home/ritu/jazzy_ws/build/demo_pkg/build install --record /home/ritu/jazzy_ws/build/demo_pkg/install.log --single-version-externally-managed install_data
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg' for CMake config files
+[1.360s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg/lib'
+[1.360s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg/bin'
+[1.360s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg/lib/pkgconfig/demo_pkg.pc'
+[1.361s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages'
+[1.361s] Level 1:colcon.colcon_core.shell:create_environment_hook('demo_pkg', 'pythonpath')
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/hook/pythonpath.ps1'
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/hook/pythonpath.dsv'
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/hook/pythonpath.sh'
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/ritu/jazzy_ws/install/demo_pkg/bin'
+[1.362s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(demo_pkg)
+[1.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/package.ps1'
+[1.362s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/package.dsv'
+[1.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/package.sh'
+[1.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/package.bash'
+[1.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/ritu/jazzy_ws/install/demo_pkg/share/demo_pkg/package.zsh'
+[1.363s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ritu/jazzy_ws/install/demo_pkg/share/colcon-core/packages/demo_pkg)
+[1.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.364s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.364s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.364s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.373s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.374s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.374s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.387s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.388s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ritu/jazzy_ws/install/local_setup.ps1'
+[1.389s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ritu/jazzy_ws/install/_local_setup_util_ps1.py'
+[1.390s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ritu/jazzy_ws/install/setup.ps1'
+[1.391s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ritu/jazzy_ws/install/local_setup.sh'
+[1.391s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ritu/jazzy_ws/install/_local_setup_util_sh.py'
+[1.392s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ritu/jazzy_ws/install/setup.sh'
+[1.393s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ritu/jazzy_ws/install/local_setup.bash'
+[1.393s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ritu/jazzy_ws/install/setup.bash'
+[1.394s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ritu/jazzy_ws/install/local_setup.zsh'
+[1.395s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ritu/jazzy_ws/install/setup.zsh'

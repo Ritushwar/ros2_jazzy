@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="1" tests="7" time="0.441" timestamp="2026-05-28T20:57:27.362674" hostname="ritushwar"><testcase classname="demo_pkg.test.test_copyright" name="test_copyright" time="0.000"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/ritu/jazzy_ws/src/demo_pkg/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="demo_pkg.test.test_flake8" name="test_flake8" time="0.101"><failure message="AssertionError: Found 43 code style errors / warnings:&#10;  ./demo_pkg/publisher_python.py:6:1: E265 block comment should start with '# '&#10;  ./demo_pkg/publisher_python.py:10:1: E265 block comment should start with '# '&#10;  ./demo_pkg/publisher_python.py:11:10: Q000 Double quotes found but single quotes preferred&#10;  ./demo_pkg/publisher_python.py:12:10: Q000 Double quotes found but single quotes preferred&#10;  ./demo_pkg/publisher_python.py:14:1: E302 expected 2 blank lines, found 1&#10;  ./demo_pkg/publisher_python.py:21:1: W293 blank line contains whitespace&#10;  ./demo_pkg/publisher_python.py:33:1: W293 blank line contains whitespace&#10;  ./demo_pkg/publisher_python.py:45:65: E225 missing whitespace around operator&#10;  ./demo_pkg/publisher_python.py:48:1: E302 expected 2 blank lines, found 1&#10;  ./demo_pkg/publisher_python.py:60:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./demo_pkg/subscriber_python.py:12:1: E302 expected 2 blank lines, found 1&#10;  ./demo_pkg/subscriber_python.py:16:86: E231 missing whitespace after ','&#10;  ./demo_pkg/subscriber_python.py:19:1: W293 blank line contains whitespace&#10;  ./demo_pkg/subscriber_python.py:20:27: E231 missing whitespace after ','&#10;  ./demo_pkg/subscriber_python.py:22:1: W293 blank line contains whitespace&#10;  ./demo_pkg/subscriber_python.py:23:27: E231 missing whitespace after ','&#10;  ./demo_pkg/subscriber_python.py:24:56: E225 missing whitespace around operator&#10;  ./demo_pkg/subscriber_python.py:26:1: E302 expected 2 blank lines, found 1&#10;  ./demo_pkg/subscriber_python.py:36:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./demo_pkg/subscriber_python.py:37:11: W292 no newline at end of file&#10;  ./setup.py:26:29: E201 whitespace after '['&#10;  ./test/pytest/test_publisher.py:1:1: D205 1 blank line required between summary line and description&#10;  ./test/pytest/test_publisher.py:1:1: D400 First line should end with a period&#10;  ./test/pytest/test_publisher.py:22:1: F401 'std_msgs.msg.String' imported but unused&#10;  ./test/pytest/test_publisher.py:23:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'&#10;  ./test/pytest/test_publisher.py:23:1: F401 'std_msgs.msg.Float32' imported but unused&#10;  ./test/pytest/test_publisher.py:25:1: I100 Import statements are in the wrong order. 'from demo_pkg.publisher_python import PublisherNode' should be before 'from std_msgs.msg import Float32'&#10;  ./test/pytest/test_publisher.py:27:1: E302 expected 2 blank lines, found 1&#10;  ./test/pytest/test_publisher.py:28:1: D205 1 blank line required between summary line and description&#10;  ./test/pytest/test_publisher.py:28:1: D400 First line should end with a period&#10;  ./test/pytest/test_publisher.py:45:35: Q000 Double quotes found but single quotes preferred&#10;  ./test/pytest/test_publisher.py:60:1: E302 expected 2 blank lines, found 1&#10;  ./test/pytest/test_publisher.py:61:1: D202 No blank lines allowed after function docstring&#10;  ./test/pytest/test_publisher.py:61:1: D205 1 blank line required between summary line and description&#10;  ./test/pytest/test_publisher.py:61:1: D400 First line should end with a period&#10;  ./test/pytest/test_publisher.py:78:1: E302 expected 2 blank lines, found 1&#10;  ./test/pytest/test_publisher.py:79:1: D202 No blank lines allowed after function docstring&#10;  ./test/pytest/test_publisher.py:79:1: D205 1 blank line required between summary line and description&#10;  ./test/pytest/test_publisher.py:79:1: D400 First line should end with a period&#10;  ./test/pytest/test_publisher.py:97:1: E302 expected 2 blank lines, found 1&#10;  ./test/pytest/test_publisher.py:98:1: D202 No blank lines allowed after function docstring&#10;  ./test/pytest/test_publisher.py:98:1: D400 First line should end with a period&#10;  ./test/pytest/test_publisher.py:126:1: E305 expected 2 blank lines after class or function definition, found 1&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 43 code style errors / warnings:
+E     ./demo_pkg/publisher_python.py:6:1: E265 block comment should start with '# '
+E     ./demo_pkg/publisher_python.py:10:1: E265 block comment should start with '# '
+E     ./demo_pkg/publisher_python.py:11:10: Q000 Double quotes found but single quotes preferred
+E     ./demo_pkg/publisher_python.py:12:10: Q000 Double quotes found but single quotes preferred
+E     ./demo_pkg/publisher_python.py:14:1: E302 expected 2 blank lines, found 1
+E     ./demo_pkg/publisher_python.py:21:1: W293 blank line contains whitespace
+E     ./demo_pkg/publisher_python.py:33:1: W293 blank line contains whitespace
+E     ./demo_pkg/publisher_python.py:45:65: E225 missing whitespace around operator
+E     ./demo_pkg/publisher_python.py:48:1: E302 expected 2 blank lines, found 1
+E     ./demo_pkg/publisher_python.py:60:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./demo_pkg/subscriber_python.py:12:1: E302 expected 2 blank lines, found 1
+E     ./demo_pkg/subscriber_python.py:16:86: E231 missing whitespace after ','
+E     ./demo_pkg/subscriber_python.py:19:1: W293 blank line contains whitespace
+E     ./demo_pkg/subscriber_python.py:20:27: E231 missing whitespace after ','
+E     ./demo_pkg/subscriber_python.py:22:1: W293 blank line contains whitespace
+E     ./demo_pkg/subscriber_python.py:23:27: E231 missing whitespace after ','
+E     ./demo_pkg/subscriber_python.py:24:56: E225 missing whitespace around operator
+E     ./demo_pkg/subscriber_python.py:26:1: E302 expected 2 blank lines, found 1
+E     ./demo_pkg/subscriber_python.py:36:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./demo_pkg/subscriber_python.py:37:11: W292 no newline at end of file
+E     ./setup.py:26:29: E201 whitespace after '['
+E     ./test/pytest/test_publisher.py:1:1: D205 1 blank line required between summary line and description
+E     ./test/pytest/test_publisher.py:1:1: D400 First line should end with a period
+E     ./test/pytest/test_publisher.py:22:1: F401 'std_msgs.msg.String' imported but unused
+E     ./test/pytest/test_publisher.py:23:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'
+E     ./test/pytest/test_publisher.py:23:1: F401 'std_msgs.msg.Float32' imported but unused
+E     ./test/pytest/test_publisher.py:25:1: I100 Import statements are in the wrong order. 'from demo_pkg.publisher_python import PublisherNode' should be before 'from std_msgs.msg import Float32'
+E     ./test/pytest/test_publisher.py:27:1: E302 expected 2 blank lines, found 1
+E     ./test/pytest/test_publisher.py:28:1: D205 1 blank line required between summary line and description
+E     ./test/pytest/test_publisher.py:28:1: D400 First line should end with a period
+E     ./test/pytest/test_publisher.py:45:35: Q000 Double quotes found but single quotes preferred
+E     ./test/pytest/test_publisher.py:60:1: E302 expected 2 blank lines, found 1
+E     ./test/pytest/test_publisher.py:61:1: D202 No blank lines allowed after function docstring
+E     ./test/pytest/test_publisher.py:61:1: D205 1 blank line required between summary line and description
+E     ./test/pytest/test_publisher.py:61:1: D400 First line should end with a period
+E     ./test/pytest/test_publisher.py:78:1: E302 expected 2 blank lines, found 1
+E     ./test/pytest/test_publisher.py:79:1: D202 No blank lines allowed after function docstring
+E     ./test/pytest/test_publisher.py:79:1: D205 1 blank line required between summary line and description
+E     ./test/pytest/test_publisher.py:79:1: D400 First line should end with a period
+E     ./test/pytest/test_publisher.py:97:1: E302 expected 2 blank lines, found 1
+E     ./test/pytest/test_publisher.py:98:1: D202 No blank lines allowed after function docstring
+E     ./test/pytest/test_publisher.py:98:1: D400 First line should end with a period
+E     ./test/pytest/test_publisher.py:126:1: E305 expected 2 blank lines after class or function definition, found 1
+E   assert 1 == 0</failure></testcase><testcase classname="demo_pkg.test.test_pep257" name="test_pep257" time="0.020"><failure message="AssertionError: Found code style errors / warnings&#10;assert 1 == 0">test/test_pep257.py:23: in test_pep257
+    assert rc == 0, 'Found code style errors / warnings'
+E   AssertionError: Found code style errors / warnings
+E   assert 1 == 0</failure></testcase><testcase classname="demo_pkg.test.pytest.test_publisher" name="test_publisher_creation" time="0.083" /><testcase classname="demo_pkg.test.pytest.test_publisher" name="test_message_counter" time="0.006" /><testcase classname="demo_pkg.test.pytest.test_publisher" name="test_message_value" time="0.006" /><testcase classname="demo_pkg.test.pytest.test_publisher" name="test_message_content" time="0.006" /></testsuite></testsuites>

@@ -1,0 +1,429 @@
+[0.170s] Invoking command in '/home/ritu/jazzy_ws/src/demo_pkg': AMENT_PREFIX_PATH=/home/ritu/jazzy_ws/install/demo_pkg:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ritu/jazzy_ws/build/demo_pkg/pytest.xml --junit-prefix=demo_pkg -o cache_dir=/home/ritu/jazzy_ws/build/demo_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.425s] [1m============================= test session starts ==============================[0m
+[0.425s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.428s] cachedir: /home/ritu/jazzy_ws/build/demo_pkg/.pytest_cache
+[0.428s] rootdir: /home/ritu/jazzy_ws/src/demo_pkg
+[0.428s] plugins: ament-lint-0.17.5, launch-testing-ros-0.26.11, ament-xmllint-0.17.5, ament-copyright-0.17.5, ament-pep257-0.17.5, ament-flake8-0.17.5, launch-testing-3.4.10, cov-4.1.0, colcon-core-0.20.1, typeguard-4.1.5
+[0.624s] [1mcollecting ... [0m[1m
+[0.624s] collected 7 items                                                              [0m
+[0.624s] 
+[0.631s] test/test_copyright.py [33ms[0m[32m                                                 [ 14%][0m
+[0.761s] test/test_flake8.py [31mF[0m[31m                                                    [ 28%][0m
+[0.785s] test/test_pep257.py [31mF[0m[31m                                                    [ 42%][0m
+[0.894s] test/pytest/test_publisher.py [31mF[0m[32m.[0m[32m.[0m[32m.[0m[31m                                       [100%][0m
+[0.894s] 
+[0.894s] =================================== FAILURES ===================================
+[0.894s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.894s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.928s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.928s] [1m[31mE   AssertionError: Found 43 code style errors / warnings:[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:6:1: E265 block comment should start with '# '[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:10:1: E265 block comment should start with '# '[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:11:10: Q000 Double quotes found but single quotes preferred[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:12:10: Q000 Double quotes found but single quotes preferred[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:14:1: E302 expected 2 blank lines, found 1[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:21:1: W293 blank line contains whitespace[0m
+[0.928s] [1m[31mE     ./demo_pkg/publisher_python.py:33:1: W293 blank line contains whitespace[0m
+[0.929s] [1m[31mE     ./demo_pkg/publisher_python.py:45:65: E225 missing whitespace around operator[0m
+[0.929s] [1m[31mE     ./demo_pkg/publisher_python.py:48:1: E302 expected 2 blank lines, found 1[0m
+[0.929s] [1m[31mE     ./demo_pkg/publisher_python.py:60:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:12:1: E302 expected 2 blank lines, found 1[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:16:86: E231 missing whitespace after ','[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:19:1: W293 blank line contains whitespace[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:20:27: E231 missing whitespace after ','[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:22:1: W293 blank line contains whitespace[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:23:27: E231 missing whitespace after ','[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:24:56: E225 missing whitespace around operator[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:26:1: E302 expected 2 blank lines, found 1[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:36:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[0.929s] [1m[31mE     ./demo_pkg/subscriber_python.py:37:11: W292 no newline at end of file[0m
+[0.929s] [1m[31mE     ./setup.py:26:29: E201 whitespace after '['[0m
+[0.929s] [1m[31mE     ./test/pytest/test_publisher.py:1:1: D205 1 blank line required between summary line and description[0m
+[0.929s] [1m[31mE     ./test/pytest/test_publisher.py:1:1: D400 First line should end with a period[0m
+[0.929s] [1m[31mE     ./test/pytest/test_publisher.py:22:1: F401 'std_msgs.msg.String' imported but unused[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:23:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:23:1: F401 'std_msgs.msg.Float32' imported but unused[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:25:1: I100 Import statements are in the wrong order. 'from demo_pkg.publisher_python import PublisherNode' should be before 'from std_msgs.msg import Float32'[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:27:1: E302 expected 2 blank lines, found 1[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:28:1: D205 1 blank line required between summary line and description[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:28:1: D400 First line should end with a period[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:45:35: Q000 Double quotes found but single quotes preferred[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:60:1: E302 expected 2 blank lines, found 1[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:61:1: D202 No blank lines allowed after function docstring[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:61:1: D205 1 blank line required between summary line and description[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:61:1: D400 First line should end with a period[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:78:1: E302 expected 2 blank lines, found 1[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:79:1: D202 No blank lines allowed after function docstring[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:79:1: D205 1 blank line required between summary line and description[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:79:1: D400 First line should end with a period[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:97:1: E302 expected 2 blank lines, found 1[0m
+[0.930s] [1m[31mE     ./test/pytest/test_publisher.py:98:1: D202 No blank lines allowed after function docstring[0m
+[0.931s] [1m[31mE     ./test/pytest/test_publisher.py:98:1: D400 First line should end with a period[0m
+[0.931s] [1m[31mE     ./test/pytest/test_publisher.py:126:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[0.931s] [1m[31mE   assert 1 == 0[0m
+[0.931s] ----------------------------- Captured stdout call -----------------------------
+[0.931s] 
+[0.931s] ./demo_pkg/publisher_python.py:6:1: E265 block comment should start with '# '
+[0.931s] #we will send string and floats
+[0.931s] ^
+[0.931s] 
+[0.931s] ./demo_pkg/publisher_python.py:10:1: E265 block comment should start with '# '
+[0.931s] #topic for the float message
+[0.931s] ^
+[0.931s] 
+[0.931s] ./demo_pkg/publisher_python.py:11:10: Q000 Double quotes found but single quotes preferred
+[0.931s] topic1 = "float_topic"
+[0.931s]          ^
+[0.931s] 
+[0.931s] ./demo_pkg/publisher_python.py:12:10: Q000 Double quotes found but single quotes preferred
+[0.932s] topic2 = "string_topic"
+[0.932s]          ^
+[0.932s] 
+[0.932s] ./demo_pkg/publisher_python.py:14:1: E302 expected 2 blank lines, found 1
+[0.932s] class PublisherNode(Node):
+[0.932s] ^
+[0.932s] 
+[0.932s] ./demo_pkg/publisher_python.py:21:1: W293 blank line contains whitespace
+[0.932s]     
+[0.932s] ^
+[0.932s] 
+[0.932s] ./demo_pkg/publisher_python.py:33:1: W293 blank line contains whitespace
+[0.932s]     
+[0.932s] ^
+[0.932s] 
+[0.932s] ./demo_pkg/publisher_python.py:45:65: E225 missing whitespace around operator
+[0.932s]         self.get_logger().info('Publishing: "%s" and value %s' %(message2.data, message1.data))
+[0.932s]                                                                 ^
+[0.933s] 
+[0.933s] ./demo_pkg/publisher_python.py:48:1: E302 expected 2 blank lines, found 1
+[0.933s] def main(args=None):
+[0.933s] ^
+[0.933s] 
+[0.933s] ./demo_pkg/publisher_python.py:60:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.933s] if __name__ == '__main__':
+[0.933s] ^
+[0.933s] 
+[0.933s] ./demo_pkg/subscriber_python.py:12:1: E302 expected 2 blank lines, found 1
+[0.933s] class SubscriberNode(Node):
+[0.933s] ^
+[0.933s] 
+[0.933s] ./demo_pkg/subscriber_python.py:16:86: E231 missing whitespace after ','
+[0.933s]         self.sub_float = self.create_subscription(Float32, topic1, self.callback_fun1,10)
+[0.933s]                                                                                      ^
+[0.933s] 
+[0.934s] ./demo_pkg/subscriber_python.py:19:1: W293 blank line contains whitespace
+[0.934s]     
+[0.934s] ^
+[0.934s] 
+[0.934s] ./demo_pkg/subscriber_python.py:20:27: E231 missing whitespace after ','
+[0.934s]     def callback_fun1(self,msg):
+[0.934s]                           ^
+[0.934s] 
+[0.934s] ./demo_pkg/subscriber_python.py:22:1: W293 blank line contains whitespace
+[0.934s]     
+[0.934s] ^
+[0.934s] 
+[0.934s] ./demo_pkg/subscriber_python.py:23:27: E231 missing whitespace after ','
+[0.934s]     def callback_fun2(self,msg):
+[0.934s]                           ^
+[0.934s] 
+[0.934s] ./demo_pkg/subscriber_python.py:24:56: E225 missing whitespace around operator
+[0.935s]         self.get_logger().info('String message: "%s"' %msg.data)
+[0.935s]                                                        ^
+[0.935s] 
+[0.935s] ./demo_pkg/subscriber_python.py:26:1: E302 expected 2 blank lines, found 1
+[0.935s] def main(args=None):
+[0.935s] ^
+[0.935s] 
+[0.935s] ./demo_pkg/subscriber_python.py:36:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.935s] if __name__ == '__main__':
+[0.935s] ^
+[0.935s] 
+[0.935s] ./demo_pkg/subscriber_python.py:37:11: W292 no newline at end of file
+[0.935s]     main()          ^
+[0.935s] 
+[0.935s] ./setup.py:26:29: E201 whitespace after '['
+[0.935s]         'console_scripts': [ 'publisher = demo_pkg.publisher_python:main',
+[0.935s]                             ^
+[0.935s] 
+[0.936s] ./test/pytest/test_publisher.py:1:1: D205 1 blank line required between summary line and description
+[0.936s] """
+[0.936s] Test suite for the ROS2 publisher node
+[0.936s] This script contains the unit tests for verifying the functionality of ROS2 publisher.
+[0.936s] It tests the node creation, message counter increment and message content formatting
+[0.936s] 
+[0.936s] --------------------------
+[0.936s] Subscription Topics
+[0.936s]     1) String
+[0.936s]     2) Float
+[0.936s] 
+[0.936s] ---------------------------
+[0.936s] Publishing Topics
+[0.936s]     1) String
+[0.936s]     2) Float
+[0.936s] 
+[0.936s] Author: Ritushwar Neupane
+[0.936s] Date: Thu May 28, 2026
+[0.936s] """
+[0.936s] ^
+[0.937s] 
+[0.937s] ./test/pytest/test_publisher.py:1:1: D400 First line should end with a period
+[0.937s] """
+[0.937s] Test suite for the ROS2 publisher node
+[0.937s] This script contains the unit tests for verifying the functionality of ROS2 publisher.
+[0.937s] It tests the node creation, message counter increment and message content formatting
+[0.937s] 
+[0.937s] --------------------------
+[0.937s] Subscription Topics
+[0.937s]     1) String
+[0.937s]     2) Float
+[0.937s] 
+[0.937s] ---------------------------
+[0.937s] Publishing Topics
+[0.937s]     1) String
+[0.937s]     2) Float
+[0.937s] 
+[0.937s] Author: Ritushwar Neupane
+[0.937s] Date: Thu May 28, 2026
+[0.937s] """
+[0.938s] ^
+[0.938s] 
+[0.938s] ./test/pytest/test_publisher.py:22:1: F401 'std_msgs.msg.String' imported but unused
+[0.938s] from std_msgs.msg import String
+[0.938s] ^
+[0.938s] 
+[0.938s] ./test/pytest/test_publisher.py:23:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'
+[0.938s] from std_msgs.msg import Float32
+[0.938s] ^
+[0.938s] 
+[0.938s] ./test/pytest/test_publisher.py:23:1: F401 'std_msgs.msg.Float32' imported but unused
+[0.938s] from std_msgs.msg import Float32
+[0.938s] ^
+[0.938s] 
+[0.938s] ./test/pytest/test_publisher.py:25:1: I100 Import statements are in the wrong order. 'from demo_pkg.publisher_python import PublisherNode' should be before 'from std_msgs.msg import Float32'
+[0.939s] from demo_pkg.publisher_python import PublisherNode
+[0.939s] ^
+[0.939s] 
+[0.939s] ./test/pytest/test_publisher.py:27:1: E302 expected 2 blank lines, found 1
+[0.939s] def test_publisher_creation():
+[0.939s] ^
+[0.939s] 
+[0.939s] ./test/pytest/test_publisher.py:28:1: D205 1 blank line required between summary line and description
+[0.939s]     """
+[0.939s]     Test if the publisher node is correctly created
+[0.939s]     This test verifies:
+[0.939s]     1) The node name is set correctly
+[0.940s]     2) The publisher object exists
+[0.940s]     3) The topics name is correct
+[0.940s] 
+[0.940s]     :raises: AssertionError if any of the checks fails
+[0.940s]     """
+[0.940s] ^
+[0.940s] 
+[0.940s] ./test/pytest/test_publisher.py:28:1: D400 First line should end with a period
+[0.940s]     """
+[0.940s]     Test if the publisher node is correctly created
+[0.940s]     This test verifies:
+[0.940s]     1) The node name is set correctly
+[0.940s]     2) The publisher object exists
+[0.940s]     3) The topics name is correct
+[0.940s] 
+[0.940s]     :raises: AssertionError if any of the checks fails
+[0.940s]     """
+[0.940s] ^
+[0.940s] 
+[0.940s] ./test/pytest/test_publisher.py:45:35: Q000 Double quotes found but single quotes preferred
+[0.941s]         assert node.get_name() == "publisher_node"
+[0.941s]                                   ^
+[0.941s] 
+[0.941s] ./test/pytest/test_publisher.py:60:1: E302 expected 2 blank lines, found 1
+[0.941s] def test_message_counter():
+[0.941s] ^
+[0.941s] 
+[0.941s] ./test/pytest/test_publisher.py:61:1: D202 No blank lines allowed after function docstring
+[0.941s]     """
+[0.941s]     Test if the message counter increment correctly
+[0.941s]     This test verify that the counter increases by 1
+[0.941s]     """
+[0.941s] ^
+[0.941s] 
+[0.941s] ./test/pytest/test_publisher.py:61:1: D205 1 blank line required between summary line and description
+[0.941s]     """
+[0.941s]     Test if the message counter increment correctly
+[0.941s]     This test verify that the counter increases by 1
+[0.941s]     """
+[0.941s] ^
+[0.942s] 
+[0.942s] ./test/pytest/test_publisher.py:61:1: D400 First line should end with a period
+[0.942s]     """
+[0.942s]     Test if the message counter increment correctly
+[0.942s]     This test verify that the counter increases by 1
+[0.942s]     """
+[0.942s] ^
+[0.942s] 
+[0.942s] ./test/pytest/test_publisher.py:78:1: E302 expected 2 blank lines, found 1
+[0.942s] def test_message_value():
+[0.942s] ^
+[0.942s] 
+[0.942s] ./test/pytest/test_publisher.py:79:1: D202 No blank lines allowed after function docstring
+[0.942s]     """
+[0.942s]     Test if the message value increment correctly
+[0.942s]     This test verify that the counter increases by 0.01
+[0.942s]     """
+[0.942s] ^
+[0.943s] 
+[0.943s] ./test/pytest/test_publisher.py:79:1: D205 1 blank line required between summary line and description
+[0.943s]     """
+[0.943s]     Test if the message value increment correctly
+[0.943s]     This test verify that the counter increases by 0.01
+[0.943s]     """
+[0.943s] ^
+[0.943s] 
+[0.943s] ./test/pytest/test_publisher.py:79:1: D400 First line should end with a period
+[0.943s]     """
+[0.943s]     Test if the message value increment correctly
+[0.943s]     This test verify that the counter increases by 0.01
+[0.943s]     """
+[0.944s] ^
+[0.944s] 
+[0.944s] ./test/pytest/test_publisher.py:97:1: E302 expected 2 blank lines, found 1
+[0.944s] def test_message_content():
+[0.944s] ^
+[0.944s] 
+[0.944s] ./test/pytest/test_publisher.py:98:1: D202 No blank lines allowed after function docstring
+[0.944s]     """
+[0.944s]     Test if the message content is formatted correctly
+[0.945s] 
+[0.945s]     This test verifies that the message string is properly formatted using an f -string
+[0.945s]     with the current counter value
+[0.945s] 
+[0.945s]     : raises : AssertionError if the message format doesn't match the expected output
+[0.945s]     """
+[0.945s] ^
+[0.945s] 
+[0.945s] ./test/pytest/test_publisher.py:98:1: D400 First line should end with a period
+[0.945s]     """
+[0.945s]     Test if the message content is formatted correctly
+[0.945s] 
+[0.945s]     This test verifies that the message string is properly formatted using an f -string
+[0.945s]     with the current counter value
+[0.945s] 
+[0.945s]     : raises : AssertionError if the message format doesn't match the expected output
+[0.945s]     """
+[0.945s] ^
+[0.946s] 
+[0.946s] ./test/pytest/test_publisher.py:126:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.946s] if __name__ == '__main__':
+[0.946s] ^
+[0.946s] 
+[0.946s] 3     D202 No blank lines allowed after function docstring
+[0.946s] 4     D205 1 blank line required between summary line and description
+[0.946s] 5     D400 First line should end with a period
+[0.946s] 1     E201 whitespace after '['
+[0.946s] 2     E225 missing whitespace around operator
+[0.946s] 3     E231 missing whitespace after ','
+[0.946s] 2     E265 block comment should start with '# '
+[0.946s] 8     E302 expected 2 blank lines, found 1
+[0.946s] 3     E305 expected 2 blank lines after class or function definition, found 1
+[0.946s] 2     F401 'std_msgs.msg.String' imported but unused
+[0.946s] 2     I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'
+[0.946s] 3     Q000 Double quotes found but single quotes preferred
+[0.946s] 1     W292 no newline at end of file
+[0.947s] 4     W293 blank line contains whitespace
+[0.947s] 
+[0.947s] 8 files checked
+[0.947s] 43 errors
+[0.947s] 
+[0.947s] 'D'-type errors: 12
+[0.947s] 'E'-type errors: 19
+[0.947s] 'F'-type errors: 2
+[0.947s] 'I'-type errors: 2
+[0.947s] 'Q'-type errors: 3
+[0.947s] 'W'-type errors: 5
+[0.947s] 
+[0.947s] Checked files:
+[0.947s] 
+[0.947s] * ./setup.py
+[0.947s] * ./test/test_copyright.py
+[0.947s] * ./test/test_pep257.py
+[0.947s] * ./test/test_flake8.py
+[0.948s] * ./test/pytest/test_publisher.py
+[0.948s] * ./demo_pkg/__init__.py
+[0.948s] * ./demo_pkg/publisher_python.py
+[0.948s] * ./demo_pkg/subscriber_python.py
+[0.948s] [31m[1m_________________________________ test_pep257 __________________________________[0m
+[0.948s] [1m[31mtest/test_pep257.py[0m:23: in test_pep257
+[0.948s]     [94massert[39;49;00m rc == [94m0[39;49;00m, [33m'[39;49;00m[33mFound code style errors / warnings[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+[0.948s] [1m[31mE   AssertionError: Found code style errors / warnings[0m
+[0.948s] [1m[31mE   assert 1 == 0[0m
+[0.948s] ----------------------------- Captured stdout call -----------------------------
+[0.948s] checking ./demo_pkg/__init__.py
+[0.948s] checking ./demo_pkg/publisher_python.py
+[0.948s] checking ./demo_pkg/subscriber_python.py
+[0.948s] checking ./setup.py
+[0.948s] checking ./test/pytest/test_publisher.py
+[0.948s] checking ./test/test_copyright.py
+[0.948s] checking ./test/test_flake8.py
+[0.948s] checking ./test/test_pep257.py
+[0.948s] checking test/pytest/test_publisher.py
+[0.949s] checking test/test_copyright.py
+[0.949s] checking test/test_flake8.py
+[0.949s] checking test/test_pep257.py
+[0.949s] ----------------------------- Captured stderr call -----------------------------
+[0.949s] ./test/pytest/test_publisher.py:1 at module level: D205: 1 blank line required between summary line and description (found 0)
+[0.949s] ./test/pytest/test_publisher.py:1 at module level: D400: First line should end with a period (not 'e')
+[0.949s] ./test/pytest/test_publisher.py:1 at module level: D415: First line should end with a period, question mark, or exclamation point (not 'e')
+[0.949s] ./test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D205: 1 blank line required between summary line and description (found 0)
+[0.949s] ./test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D400: First line should end with a period (not 'd')
+[0.949s] ./test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'd')
+[0.949s] ./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D202: No blank lines allowed after function docstring (found 1)
+[0.949s] ./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D205: 1 blank line required between summary line and description (found 0)
+[0.949s] ./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D400: First line should end with a period (not 'y')
+[0.949s] ./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+[0.949s] ./test/pytest/test_publisher.py:79 in public function `test_message_value`: D202: No blank lines allowed after function docstring (found 1)
+[0.949s] ./test/pytest/test_publisher.py:79 in public function `test_message_value`: D205: 1 blank line required between summary line and description (found 0)
+[0.950s] ./test/pytest/test_publisher.py:79 in public function `test_message_value`: D400: First line should end with a period (not 'y')
+[0.950s] ./test/pytest/test_publisher.py:79 in public function `test_message_value`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+[0.950s] ./test/pytest/test_publisher.py:98 in public function `test_message_content`: D202: No blank lines allowed after function docstring (found 1)
+[0.950s] ./test/pytest/test_publisher.py:98 in public function `test_message_content`: D400: First line should end with a period (not 'y')
+[0.950s] ./test/pytest/test_publisher.py:98 in public function `test_message_content`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+[0.950s] test/pytest/test_publisher.py:1 at module level: D205: 1 blank line required between summary line and description (found 0)
+[0.950s] test/pytest/test_publisher.py:1 at module level: D400: First line should end with a period (not 'e')
+[0.950s] test/pytest/test_publisher.py:1 at module level: D415: First line should end with a period, question mark, or exclamation point (not 'e')
+[0.950s] test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D205: 1 blank line required between summary line and description (found 0)
+[0.950s] test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D400: First line should end with a period (not 'd')
+[0.950s] test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'd')
+[0.950s] test/pytest/test_publisher.py:61 in public function `test_message_counter`: D202: No blank lines allowed after function docstring (found 1)
+[0.950s] test/pytest/test_publisher.py:61 in public function `test_message_counter`: D205: 1 blank line required between summary line and description (found 0)
+[0.950s] test/pytest/test_publisher.py:61 in public function `test_message_counter`: D400: First line should end with a period (not 'y')
+[0.950s] test/pytest/test_publisher.py:61 in public function `test_message_counter`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+[0.950s] test/pytest/test_publisher.py:79 in public function `test_message_value`: D202: No blank lines allowed after function docstring (found 1)
+[0.950s] test/pytest/test_publisher.py:79 in public function `test_message_value`: D205: 1 blank line required between summary line and description (found 0)
+[0.951s] test/pytest/test_publisher.py:79 in public function `test_message_value`: D400: First line should end with a period (not 'y')
+[0.951s] test/pytest/test_publisher.py:79 in public function `test_message_value`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+[0.951s] test/pytest/test_publisher.py:98 in public function `test_message_content`: D202: No blank lines allowed after function docstring (found 1)
+[0.951s] test/pytest/test_publisher.py:98 in public function `test_message_content`: D400: First line should end with a period (not 'y')
+[0.951s] test/pytest/test_publisher.py:98 in public function `test_message_content`: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+[0.951s] 34 errors
+[0.951s] [31m[1m___________________________ test_publisher_creation ____________________________[0m
+[0.951s] [1m[31mtest/pytest/test_publisher.py[0m:52: in test_publisher_creation
+[0.951s] [33m=============================== warnings summary ===============================[0m
+[0.951s] test/test_flake8.py::test_flake8
+[0.951s] test/test_flake8.py::test_flake8
+[0.951s] test/test_flake8.py::test_flake8
+[0.951s] test/test_flake8.py::test_flake8
+[0.951s]   Warning: This process (pid=9552) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[0.951s] 
+[0.951s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[0.951s]     [94massert[39;49;00m node.pub_float.topic_name == [33m'[39;49;00m[33m/float_topics[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+[0.951s] [1m[31mE   AssertionError: assert '/float_topic' == '/float_topics'[0m
+[0.952s] [1m[31mE     - /float_topics[0m
+[0.952s] [1m[31mE     ?             -[0m
+[0.952s] [1m[31mE     + /float_topic[0m
+[0.952s] ------ generated xml file: /home/ritu/jazzy_ws/build/demo_pkg/pytest.xml -------
+[0.952s] [36m[1m=========================== short test summary info ============================[0m
+[0.952s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 43 code style errors / warnings:
+[0.952s] [31mFAILED[0m test/test_pep257.py::[1mtest_pep257[0m - AssertionError: Found code style errors / warnings
+[0.952s] [31mFAILED[0m test/pytest/test_publisher.py::[1mtest_publisher_creation[0m - AssertionError: assert '/float_topic' == '/float_topics'
+[0.952s] [31m============== [31m[1m3 failed[0m, [32m3 passed[0m, [33m1 skipped[0m, [33m4 warnings[0m[31m in 0.50s[0m[31m ==============[0m
+[1.139s] Invoked command in '/home/ritu/jazzy_ws/src/demo_pkg' returned '1': AMENT_PREFIX_PATH=/home/ritu/jazzy_ws/install/demo_pkg:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ritu/jazzy_ws/build/demo_pkg/pytest.xml --junit-prefix=demo_pkg -o cache_dir=/home/ritu/jazzy_ws/build/demo_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

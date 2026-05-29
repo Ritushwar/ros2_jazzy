@@ -1,0 +1,446 @@
+[0.000000] (-) TimerEvent: {}
+[0.000211] (demo_pkg) JobQueued: {'identifier': 'demo_pkg', 'dependencies': OrderedDict({'demo_pkg': '/home/ritu/jazzy_ws/install/demo_pkg'})}
+[0.000576] (demo_pkg) JobStarted: {'identifier': 'demo_pkg'}
+[0.099913] (-) TimerEvent: {}
+[0.169293] (demo_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/ritu/jazzy_ws/src/demo_pkg', 'env': {'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ritu', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ritu', 'OLDPWD': '/home/ritu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2133', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ritu/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ritu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ritu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ritu/intelFPGA/20.1/modelsim_ase/bin:/home/ritu/intelFPGA/20.1/modelsim_ase/bin:/home/ritu/intelFPGA/20.1/modelsim_ase/bin', 'SESSION_MANAGER': 'local/ritushwar:@/tmp/.ICE-unix/1954,unix/ritushwar:/tmp/.ICE-unix/1954', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/745a73f8_74dc_40c7_bf8e_2aeacf80fe15', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BV38P3', 'GNOME_TERMINAL_SERVICE': ':1.119', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ritu/jazzy_ws/install/demo_pkg:/home/ritu/ros2_ws/install/mycobot_ros2:/home/ritu/ros2_ws/install/mycobot_system_tests:/home/ritu/ros2_ws/install/mycobot_moveit_config:/home/ritu/ros2_ws/install/mycobot_gazebo:/home/ritu/ros2_ws/install/mycobot_description:/home/ritu/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ritu/jazzy_ws/build/demo_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ritu/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ritu/jazzy_ws/install/demo_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/ritu/ros2_ws/install/mycobot_ros2:/home/ritu/ros2_ws/install/mycobot_system_tests:/home/ritu/ros2_ws/install/mycobot_moveit_config:/home/ritu/ros2_ws/install/mycobot_gazebo:/home/ritu/ros2_ws/install/mycobot_description:/home/ritu/ros2_ws/install/mycobot_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/ritu/jazzy_ws/build/demo_pkg/pytest.xml --junit-prefix=demo_pkg -o cache_dir=/home/ritu/jazzy_ws/build/demo_pkg/.pytest_cache'}, 'shell': False}
+[0.200101] (-) TimerEvent: {}
+[0.300323] (-) TimerEvent: {}
+[0.400627] (-) TimerEvent: {}
+[0.424940] (demo_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.425375] (demo_pkg) StdoutLine: {'line': b'platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[0.427952] (demo_pkg) StdoutLine: {'line': b'cachedir: /home/ritu/jazzy_ws/build/demo_pkg/.pytest_cache\n'}
+[0.428307] (demo_pkg) StdoutLine: {'line': b'rootdir: /home/ritu/jazzy_ws/src/demo_pkg\n'}
+[0.428402] (demo_pkg) StdoutLine: {'line': b'plugins: ament-lint-0.17.5, launch-testing-ros-0.26.11, ament-xmllint-0.17.5, ament-copyright-0.17.5, ament-pep257-0.17.5, ament-flake8-0.17.5, launch-testing-3.4.10, cov-4.1.0, colcon-core-0.20.1, typeguard-4.1.5\n'}
+[0.500736] (-) TimerEvent: {}
+[0.600960] (-) TimerEvent: {}
+[0.624116] (demo_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.624278] (demo_pkg) StdoutLine: {'line': b'collected 7 items                                                              \x1b[0m\n'}
+[0.624524] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.631723] (demo_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 14%]\x1b[0m\n'}
+[0.701074] (-) TimerEvent: {}
+[0.761945] (demo_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 28%]\x1b[0m\n'}
+[0.785314] (demo_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 42%]\x1b[0m\n'}
+[0.801129] (-) TimerEvent: {}
+[0.894195] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py \x1b[31mF\x1b[0m\x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[31m                                       [100%]\x1b[0m\n'}
+[0.894385] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.894446] (demo_pkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.894499] (demo_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.894550] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.901251] (-) TimerEvent: {}
+[0.927723] (demo_pkg) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[0.928476] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 43 code style errors / warnings:\x1b[0m\n'}
+[0.928561] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:6:1: E265 block comment should start with '# '\x1b[0m\n"}
+[0.928692] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:10:1: E265 block comment should start with '# '\x1b[0m\n"}
+[0.928753] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:11:10: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.928823] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:12:10: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.928892] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:14:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.928957] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:21:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.929022] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:33:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.929093] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:45:65: E225 missing whitespace around operator\x1b[0m\n'}
+[0.929163] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:48:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.929228] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/publisher_python.py:60:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[0.929293] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:12:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.929359] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:16:86: E231 missing whitespace after ','\x1b[0m\n"}
+[0.929453] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:19:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.929508] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:20:27: E231 missing whitespace after ','\x1b[0m\n"}
+[0.929559] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:22:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.929610] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:23:27: E231 missing whitespace after ','\x1b[0m\n"}
+[0.929660] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:24:56: E225 missing whitespace around operator\x1b[0m\n'}
+[0.929710] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:26:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.929760] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:36:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[0.929811] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./demo_pkg/subscriber_python.py:37:11: W292 no newline at end of file\x1b[0m\n'}
+[0.929869] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:26:29: E201 whitespace after '['\x1b[0m\n"}
+[0.929921] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:1:1: D205 1 blank line required between summary line and description\x1b[0m\n'}
+[0.929972] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:1:1: D400 First line should end with a period\x1b[0m\n'}
+[0.930023] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:22:1: F401 'std_msgs.msg.String' imported but unused\x1b[0m\n"}
+[0.930083] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:23:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[0.930145] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:23:1: F401 'std_msgs.msg.Float32' imported but unused\x1b[0m\n"}
+[0.930203] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:25:1: I100 Import statements are in the wrong order. 'from demo_pkg.publisher_python import PublisherNode' should be before 'from std_msgs.msg import Float32'\x1b[0m\n"}
+[0.930266] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:27:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.930321] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:28:1: D205 1 blank line required between summary line and description\x1b[0m\n'}
+[0.930377] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:28:1: D400 First line should end with a period\x1b[0m\n'}
+[0.930433] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:45:35: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.930490] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:60:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.930545] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:61:1: D202 No blank lines allowed after function docstring\x1b[0m\n'}
+[0.930602] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:61:1: D205 1 blank line required between summary line and description\x1b[0m\n'}
+[0.930660] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:61:1: D400 First line should end with a period\x1b[0m\n'}
+[0.930716] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:78:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.930772] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:79:1: D202 No blank lines allowed after function docstring\x1b[0m\n'}
+[0.930827] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:79:1: D205 1 blank line required between summary line and description\x1b[0m\n'}
+[0.930883] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:79:1: D400 First line should end with a period\x1b[0m\n'}
+[0.930938] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:97:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[0.930993] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:98:1: D202 No blank lines allowed after function docstring\x1b[0m\n'}
+[0.931050] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:98:1: D400 First line should end with a period\x1b[0m\n'}
+[0.931115] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./test/pytest/test_publisher.py:126:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[0.931174] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.931230] (demo_pkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.931286] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.931343] (demo_pkg) StdoutLine: {'line': b"./demo_pkg/publisher_python.py:6:1: E265 block comment should start with '# '\n"}
+[0.931401] (demo_pkg) StdoutLine: {'line': b'#we will send string and floats\n'}
+[0.931457] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.931512] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.931567] (demo_pkg) StdoutLine: {'line': b"./demo_pkg/publisher_python.py:10:1: E265 block comment should start with '# '\n"}
+[0.931625] (demo_pkg) StdoutLine: {'line': b'#topic for the float message\n'}
+[0.931679] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.931737] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.931793] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:11:10: Q000 Double quotes found but single quotes preferred\n'}
+[0.931853] (demo_pkg) StdoutLine: {'line': b'topic1 = "float_topic"\n'}
+[0.931910] (demo_pkg) StdoutLine: {'line': b'         ^\n'}
+[0.931966] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.932020] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:12:10: Q000 Double quotes found but single quotes preferred\n'}
+[0.932084] (demo_pkg) StdoutLine: {'line': b'topic2 = "string_topic"\n'}
+[0.932145] (demo_pkg) StdoutLine: {'line': b'         ^\n'}
+[0.932200] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.932255] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:14:1: E302 expected 2 blank lines, found 1\n'}
+[0.932311] (demo_pkg) StdoutLine: {'line': b'class PublisherNode(Node):\n'}
+[0.932369] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.932425] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.932481] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:21:1: W293 blank line contains whitespace\n'}
+[0.932537] (demo_pkg) StdoutLine: {'line': b'    \n'}
+[0.932593] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.932647] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.932703] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:33:1: W293 blank line contains whitespace\n'}
+[0.932757] (demo_pkg) StdoutLine: {'line': b'    \n'}
+[0.932812] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.932868] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.932923] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:45:65: E225 missing whitespace around operator\n'}
+[0.932979] (demo_pkg) StdoutLine: {'line': b'        self.get_logger().info(\'Publishing: "%s" and value %s\' %(message2.data, message1.data))\n'}
+[0.933039] (demo_pkg) StdoutLine: {'line': b'                                                                ^\n'}
+[0.933105] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.933162] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:48:1: E302 expected 2 blank lines, found 1\n'}
+[0.933219] (demo_pkg) StdoutLine: {'line': b'def main(args=None):\n'}
+[0.933273] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.933330] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.933385] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/publisher_python.py:60:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.933441] (demo_pkg) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[0.933497] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.933555] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.933615] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:12:1: E302 expected 2 blank lines, found 1\n'}
+[0.933673] (demo_pkg) StdoutLine: {'line': b'class SubscriberNode(Node):\n'}
+[0.933734] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.933791] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.933848] (demo_pkg) StdoutLine: {'line': b"./demo_pkg/subscriber_python.py:16:86: E231 missing whitespace after ','\n"}
+[0.933907] (demo_pkg) StdoutLine: {'line': b'        self.sub_float = self.create_subscription(Float32, topic1, self.callback_fun1,10)\n'}
+[0.933964] (demo_pkg) StdoutLine: {'line': b'                                                                                     ^\n'}
+[0.934022] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.934094] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:19:1: W293 blank line contains whitespace\n'}
+[0.934156] (demo_pkg) StdoutLine: {'line': b'    \n'}
+[0.934215] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.934271] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.934327] (demo_pkg) StdoutLine: {'line': b"./demo_pkg/subscriber_python.py:20:27: E231 missing whitespace after ','\n"}
+[0.934384] (demo_pkg) StdoutLine: {'line': b'    def callback_fun1(self,msg):\n'}
+[0.934438] (demo_pkg) StdoutLine: {'line': b'                          ^\n'}
+[0.934495] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.934551] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:22:1: W293 blank line contains whitespace\n'}
+[0.934609] (demo_pkg) StdoutLine: {'line': b'    \n'}
+[0.934665] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.934720] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.934774] (demo_pkg) StdoutLine: {'line': b"./demo_pkg/subscriber_python.py:23:27: E231 missing whitespace after ','\n"}
+[0.934836] (demo_pkg) StdoutLine: {'line': b'    def callback_fun2(self,msg):\n'}
+[0.934891] (demo_pkg) StdoutLine: {'line': b'                          ^\n'}
+[0.934946] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.935005] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:24:56: E225 missing whitespace around operator\n'}
+[0.935060] (demo_pkg) StdoutLine: {'line': b'        self.get_logger().info(\'String message: "%s"\' %msg.data)\n'}
+[0.935130] (demo_pkg) StdoutLine: {'line': b'                                                       ^\n'}
+[0.935191] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.935246] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:26:1: E302 expected 2 blank lines, found 1\n'}
+[0.935300] (demo_pkg) StdoutLine: {'line': b'def main(args=None):\n'}
+[0.935354] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.935409] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.935463] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:36:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.935518] (demo_pkg) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[0.935572] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.935626] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.935681] (demo_pkg) StdoutLine: {'line': b'./demo_pkg/subscriber_python.py:37:11: W292 no newline at end of file\n'}
+[0.935733] (demo_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[0.935789] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.935844] (demo_pkg) StdoutLine: {'line': b"./setup.py:26:29: E201 whitespace after '['\n"}
+[0.935898] (demo_pkg) StdoutLine: {'line': b"        'console_scripts': [ 'publisher = demo_pkg.publisher_python:main',\n"}
+[0.935953] (demo_pkg) StdoutLine: {'line': b'                            ^\n'}
+[0.936007] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.936060] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:1:1: D205 1 blank line required between summary line and description\n'}
+[0.936124] (demo_pkg) StdoutLine: {'line': b'"""\n'}
+[0.936179] (demo_pkg) StdoutLine: {'line': b'Test suite for the ROS2 publisher node\n'}
+[0.936233] (demo_pkg) StdoutLine: {'line': b'This script contains the unit tests for verifying the functionality of ROS2 publisher.\n'}
+[0.936287] (demo_pkg) StdoutLine: {'line': b'It tests the node creation, message counter increment and message content formatting\n'}
+[0.936342] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.936398] (demo_pkg) StdoutLine: {'line': b'--------------------------\n'}
+[0.936449] (demo_pkg) StdoutLine: {'line': b'Subscription Topics\n'}
+[0.936499] (demo_pkg) StdoutLine: {'line': b'    1) String\n'}
+[0.936548] (demo_pkg) StdoutLine: {'line': b'    2) Float\n'}
+[0.936597] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.936646] (demo_pkg) StdoutLine: {'line': b'---------------------------\n'}
+[0.936695] (demo_pkg) StdoutLine: {'line': b'Publishing Topics\n'}
+[0.936743] (demo_pkg) StdoutLine: {'line': b'    1) String\n'}
+[0.936792] (demo_pkg) StdoutLine: {'line': b'    2) Float\n'}
+[0.936840] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.936888] (demo_pkg) StdoutLine: {'line': b'Author: Ritushwar Neupane\n'}
+[0.936939] (demo_pkg) StdoutLine: {'line': b'Date: Thu May 28, 2026\n'}
+[0.936989] (demo_pkg) StdoutLine: {'line': b'"""\n'}
+[0.937040] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.937096] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.937147] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:1:1: D400 First line should end with a period\n'}
+[0.937197] (demo_pkg) StdoutLine: {'line': b'"""\n'}
+[0.937247] (demo_pkg) StdoutLine: {'line': b'Test suite for the ROS2 publisher node\n'}
+[0.937296] (demo_pkg) StdoutLine: {'line': b'This script contains the unit tests for verifying the functionality of ROS2 publisher.\n'}
+[0.937347] (demo_pkg) StdoutLine: {'line': b'It tests the node creation, message counter increment and message content formatting\n'}
+[0.937397] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.937447] (demo_pkg) StdoutLine: {'line': b'--------------------------\n'}
+[0.937502] (demo_pkg) StdoutLine: {'line': b'Subscription Topics\n'}
+[0.937553] (demo_pkg) StdoutLine: {'line': b'    1) String\n'}
+[0.937602] (demo_pkg) StdoutLine: {'line': b'    2) Float\n'}
+[0.937651] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.937700] (demo_pkg) StdoutLine: {'line': b'---------------------------\n'}
+[0.937748] (demo_pkg) StdoutLine: {'line': b'Publishing Topics\n'}
+[0.937798] (demo_pkg) StdoutLine: {'line': b'    1) String\n'}
+[0.937847] (demo_pkg) StdoutLine: {'line': b'    2) Float\n'}
+[0.937895] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.937944] (demo_pkg) StdoutLine: {'line': b'Author: Ritushwar Neupane\n'}
+[0.937993] (demo_pkg) StdoutLine: {'line': b'Date: Thu May 28, 2026\n'}
+[0.938042] (demo_pkg) StdoutLine: {'line': b'"""\n'}
+[0.938100] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.938151] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.938200] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:22:1: F401 'std_msgs.msg.String' imported but unused\n"}
+[0.938250] (demo_pkg) StdoutLine: {'line': b'from std_msgs.msg import String\n'}
+[0.938299] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.938348] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.938418] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:23:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'\n"}
+[0.938486] (demo_pkg) StdoutLine: {'line': b'from std_msgs.msg import Float32\n'}
+[0.938560] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.938629] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.938702] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:23:1: F401 'std_msgs.msg.Float32' imported but unused\n"}
+[0.938772] (demo_pkg) StdoutLine: {'line': b'from std_msgs.msg import Float32\n'}
+[0.938841] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.938910] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.938983] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:25:1: I100 Import statements are in the wrong order. 'from demo_pkg.publisher_python import PublisherNode' should be before 'from std_msgs.msg import Float32'\n"}
+[0.939055] (demo_pkg) StdoutLine: {'line': b'from demo_pkg.publisher_python import PublisherNode\n'}
+[0.939148] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.939229] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.939307] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:27:1: E302 expected 2 blank lines, found 1\n'}
+[0.939396] (demo_pkg) StdoutLine: {'line': b'def test_publisher_creation():\n'}
+[0.939480] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.939559] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.939635] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:28:1: D205 1 blank line required between summary line and description\n'}
+[0.939719] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.939812] (demo_pkg) StdoutLine: {'line': b'    Test if the publisher node is correctly created\n'}
+[0.939889] (demo_pkg) StdoutLine: {'line': b'    This test verifies:\n'}
+[0.939993] (demo_pkg) StdoutLine: {'line': b'    1) The node name is set correctly\n'}
+[0.940058] (demo_pkg) StdoutLine: {'line': b'    2) The publisher object exists\n'}
+[0.940145] (demo_pkg) StdoutLine: {'line': b'    3) The topics name is correct\n'}
+[0.940195] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.940244] (demo_pkg) StdoutLine: {'line': b'    :raises: AssertionError if any of the checks fails\n'}
+[0.940294] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.940342] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.940391] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.940441] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:28:1: D400 First line should end with a period\n'}
+[0.940491] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.940539] (demo_pkg) StdoutLine: {'line': b'    Test if the publisher node is correctly created\n'}
+[0.940587] (demo_pkg) StdoutLine: {'line': b'    This test verifies:\n'}
+[0.940636] (demo_pkg) StdoutLine: {'line': b'    1) The node name is set correctly\n'}
+[0.940698] (demo_pkg) StdoutLine: {'line': b'    2) The publisher object exists\n'}
+[0.940746] (demo_pkg) StdoutLine: {'line': b'    3) The topics name is correct\n'}
+[0.940795] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.940843] (demo_pkg) StdoutLine: {'line': b'    :raises: AssertionError if any of the checks fails\n'}
+[0.940893] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.940943] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.940992] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.941041] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:45:35: Q000 Double quotes found but single quotes preferred\n'}
+[0.941111] (demo_pkg) StdoutLine: {'line': b'        assert node.get_name() == "publisher_node"\n'}
+[0.941162] (demo_pkg) StdoutLine: {'line': b'                                  ^\n'}
+[0.941212] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.941261] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:60:1: E302 expected 2 blank lines, found 1\n'}
+[0.941310] (demo_pkg) StdoutLine: {'line': b'def test_message_counter():\n'}
+[0.941358] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.941406] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.941454] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:61:1: D202 No blank lines allowed after function docstring\n'}
+[0.941504] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.941553] (demo_pkg) StdoutLine: {'line': b'    Test if the message counter increment correctly\n'}
+[0.941602] (demo_pkg) StdoutLine: {'line': b'    This test verify that the counter increases by 1\n'}
+[0.941650] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.941699] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.941747] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.941795] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:61:1: D205 1 blank line required between summary line and description\n'}
+[0.941845] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.941893] (demo_pkg) StdoutLine: {'line': b'    Test if the message counter increment correctly\n'}
+[0.941942] (demo_pkg) StdoutLine: {'line': b'    This test verify that the counter increases by 1\n'}
+[0.941991] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.942039] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.942095] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.942147] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:61:1: D400 First line should end with a period\n'}
+[0.942196] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.942245] (demo_pkg) StdoutLine: {'line': b'    Test if the message counter increment correctly\n'}
+[0.942295] (demo_pkg) StdoutLine: {'line': b'    This test verify that the counter increases by 1\n'}
+[0.942344] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.942393] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.942442] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.942492] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:78:1: E302 expected 2 blank lines, found 1\n'}
+[0.942541] (demo_pkg) StdoutLine: {'line': b'def test_message_value():\n'}
+[0.942588] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.942661] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.942727] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:79:1: D202 No blank lines allowed after function docstring\n'}
+[0.942824] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.942876] (demo_pkg) StdoutLine: {'line': b'    Test if the message value increment correctly\n'}
+[0.942922] (demo_pkg) StdoutLine: {'line': b'    This test verify that the counter increases by 0.01\n'}
+[0.942968] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.943013] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.943056] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.943269] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:79:1: D205 1 blank line required between summary line and description\n'}
+[0.943320] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.943369] (demo_pkg) StdoutLine: {'line': b'    Test if the message value increment correctly\n'}
+[0.943418] (demo_pkg) StdoutLine: {'line': b'    This test verify that the counter increases by 0.01\n'}
+[0.943471] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.943520] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.943568] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.943617] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:79:1: D400 First line should end with a period\n'}
+[0.943678] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.943746] (demo_pkg) StdoutLine: {'line': b'    Test if the message value increment correctly\n'}
+[0.943812] (demo_pkg) StdoutLine: {'line': b'    This test verify that the counter increases by 0.01\n'}
+[0.943889] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.944090] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.944314] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.944488] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:97:1: E302 expected 2 blank lines, found 1\n'}
+[0.944647] (demo_pkg) StdoutLine: {'line': b'def test_message_content():\n'}
+[0.944738] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.944807] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.944877] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:98:1: D202 No blank lines allowed after function docstring\n'}
+[0.944952] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.945013] (demo_pkg) StdoutLine: {'line': b'    Test if the message content is formatted correctly\n'}
+[0.945077] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.945136] (demo_pkg) StdoutLine: {'line': b'    This test verifies that the message string is properly formatted using an f -string\n'}
+[0.945202] (demo_pkg) StdoutLine: {'line': b'    with the current counter value\n'}
+[0.945256] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.945310] (demo_pkg) StdoutLine: {'line': b"    : raises : AssertionError if the message format doesn't match the expected output\n"}
+[0.945365] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.945418] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.945470] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.945523] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:98:1: D400 First line should end with a period\n'}
+[0.945578] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.945633] (demo_pkg) StdoutLine: {'line': b'    Test if the message content is formatted correctly\n'}
+[0.945686] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.945740] (demo_pkg) StdoutLine: {'line': b'    This test verifies that the message string is properly formatted using an f -string\n'}
+[0.945795] (demo_pkg) StdoutLine: {'line': b'    with the current counter value\n'}
+[0.945849] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.945904] (demo_pkg) StdoutLine: {'line': b"    : raises : AssertionError if the message format doesn't match the expected output\n"}
+[0.945958] (demo_pkg) StdoutLine: {'line': b'    """\n'}
+[0.946012] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.946071] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.946129] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:126:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.946186] (demo_pkg) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[0.946243] (demo_pkg) StdoutLine: {'line': b'^\n'}
+[0.946297] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.946350] (demo_pkg) StdoutLine: {'line': b'3     D202 No blank lines allowed after function docstring\n'}
+[0.946405] (demo_pkg) StdoutLine: {'line': b'4     D205 1 blank line required between summary line and description\n'}
+[0.946460] (demo_pkg) StdoutLine: {'line': b'5     D400 First line should end with a period\n'}
+[0.946514] (demo_pkg) StdoutLine: {'line': b"1     E201 whitespace after '['\n"}
+[0.946569] (demo_pkg) StdoutLine: {'line': b'2     E225 missing whitespace around operator\n'}
+[0.946622] (demo_pkg) StdoutLine: {'line': b"3     E231 missing whitespace after ','\n"}
+[0.946675] (demo_pkg) StdoutLine: {'line': b"2     E265 block comment should start with '# '\n"}
+[0.946729] (demo_pkg) StdoutLine: {'line': b'8     E302 expected 2 blank lines, found 1\n'}
+[0.946785] (demo_pkg) StdoutLine: {'line': b'3     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.946841] (demo_pkg) StdoutLine: {'line': b"2     F401 'std_msgs.msg.String' imported but unused\n"}
+[0.946901] (demo_pkg) StdoutLine: {'line': b"2     I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'\n"}
+[0.946957] (demo_pkg) StdoutLine: {'line': b'3     Q000 Double quotes found but single quotes preferred\n'}
+[0.947013] (demo_pkg) StdoutLine: {'line': b'1     W292 no newline at end of file\n'}
+[0.947072] (demo_pkg) StdoutLine: {'line': b'4     W293 blank line contains whitespace\n'}
+[0.947132] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.947187] (demo_pkg) StdoutLine: {'line': b'8 files checked\n'}
+[0.947242] (demo_pkg) StdoutLine: {'line': b'43 errors\n'}
+[0.947298] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.947351] (demo_pkg) StdoutLine: {'line': b"'D'-type errors: 12\n"}
+[0.947406] (demo_pkg) StdoutLine: {'line': b"'E'-type errors: 19\n"}
+[0.947460] (demo_pkg) StdoutLine: {'line': b"'F'-type errors: 2\n"}
+[0.947514] (demo_pkg) StdoutLine: {'line': b"'I'-type errors: 2\n"}
+[0.947568] (demo_pkg) StdoutLine: {'line': b"'Q'-type errors: 3\n"}
+[0.947621] (demo_pkg) StdoutLine: {'line': b"'W'-type errors: 5\n"}
+[0.947676] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.947729] (demo_pkg) StdoutLine: {'line': b'Checked files:\n'}
+[0.947784] (demo_pkg) StdoutLine: {'line': b'\n'}
+[0.947838] (demo_pkg) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.947891] (demo_pkg) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.947945] (demo_pkg) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.947998] (demo_pkg) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.948051] (demo_pkg) StdoutLine: {'line': b'* ./test/pytest/test_publisher.py\n'}
+[0.948118] (demo_pkg) StdoutLine: {'line': b'* ./demo_pkg/__init__.py\n'}
+[0.948174] (demo_pkg) StdoutLine: {'line': b'* ./demo_pkg/publisher_python.py\n'}
+[0.948228] (demo_pkg) StdoutLine: {'line': b'* ./demo_pkg/subscriber_python.py\n'}
+[0.948281] (demo_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_pep257 __________________________________\x1b[0m\n'}
+[0.948334] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_pep257.py\x1b[0m:23: in test_pep257\n'}
+[0.948389] (demo_pkg) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound code style errors / warnings\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\x1b[90m\x1b[39;49;00m\n"}
+[0.948445] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found code style errors / warnings\x1b[0m\n'}
+[0.948500] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.948553] (demo_pkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.948608] (demo_pkg) StdoutLine: {'line': b'checking ./demo_pkg/__init__.py\n'}
+[0.948664] (demo_pkg) StdoutLine: {'line': b'checking ./demo_pkg/publisher_python.py\n'}
+[0.948718] (demo_pkg) StdoutLine: {'line': b'checking ./demo_pkg/subscriber_python.py\n'}
+[0.948772] (demo_pkg) StdoutLine: {'line': b'checking ./setup.py\n'}
+[0.948826] (demo_pkg) StdoutLine: {'line': b'checking ./test/pytest/test_publisher.py\n'}
+[0.948881] (demo_pkg) StdoutLine: {'line': b'checking ./test/test_copyright.py\n'}
+[0.948935] (demo_pkg) StdoutLine: {'line': b'checking ./test/test_flake8.py\n'}
+[0.948987] (demo_pkg) StdoutLine: {'line': b'checking ./test/test_pep257.py\n'}
+[0.949041] (demo_pkg) StdoutLine: {'line': b'checking test/pytest/test_publisher.py\n'}
+[0.949102] (demo_pkg) StdoutLine: {'line': b'checking test/test_copyright.py\n'}
+[0.949158] (demo_pkg) StdoutLine: {'line': b'checking test/test_flake8.py\n'}
+[0.949278] (demo_pkg) StdoutLine: {'line': b'checking test/test_pep257.py\n'}
+[0.949334] (demo_pkg) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.949389] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:1 at module level: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.949448] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:1 at module level: D400: First line should end with a period (not 'e')\n"}
+[0.949504] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:1 at module level: D415: First line should end with a period, question mark, or exclamation point (not 'e')\n"}
+[0.949565] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.949621] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D400: First line should end with a period (not 'd')\n"}
+[0.949679] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'd')\n"}
+[0.949733] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[0.949789] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.949843] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D400: First line should end with a period (not 'y')\n"}
+[0.949897] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:61 in public function `test_message_counter`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[0.949952] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:79 in public function `test_message_value`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[0.950008] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:79 in public function `test_message_value`: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.950066] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:79 in public function `test_message_value`: D400: First line should end with a period (not 'y')\n"}
+[0.950180] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:79 in public function `test_message_value`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[0.950237] (demo_pkg) StdoutLine: {'line': b'./test/pytest/test_publisher.py:98 in public function `test_message_content`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[0.950292] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:98 in public function `test_message_content`: D400: First line should end with a period (not 'y')\n"}
+[0.950345] (demo_pkg) StdoutLine: {'line': b"./test/pytest/test_publisher.py:98 in public function `test_message_content`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[0.950399] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:1 at module level: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.950453] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:1 at module level: D400: First line should end with a period (not 'e')\n"}
+[0.950507] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:1 at module level: D415: First line should end with a period, question mark, or exclamation point (not 'e')\n"}
+[0.950562] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.950616] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D400: First line should end with a period (not 'd')\n"}
+[0.950671] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:28 in public function `test_publisher_creation`: D415: First line should end with a period, question mark, or exclamation point (not 'd')\n"}
+[0.950729] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:61 in public function `test_message_counter`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[0.950784] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:61 in public function `test_message_counter`: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.950839] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:61 in public function `test_message_counter`: D400: First line should end with a period (not 'y')\n"}
+[0.950894] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:61 in public function `test_message_counter`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[0.950949] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:79 in public function `test_message_value`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[0.951003] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:79 in public function `test_message_value`: D205: 1 blank line required between summary line and description (found 0)\n'}
+[0.951058] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:79 in public function `test_message_value`: D400: First line should end with a period (not 'y')\n"}
+[0.951120] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:79 in public function `test_message_value`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[0.951180] (demo_pkg) StdoutLine: {'line': b'test/pytest/test_publisher.py:98 in public function `test_message_content`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[0.951240] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:98 in public function `test_message_content`: D400: First line should end with a period (not 'y')\n"}
+[0.951295] (demo_pkg) StdoutLine: {'line': b"test/pytest/test_publisher.py:98 in public function `test_message_content`: D415: First line should end with a period, question mark, or exclamation point (not 'y')\n"}
+[0.951350] (demo_pkg) StdoutLine: {'line': b'34 errors\n'}
+[0.951404] (demo_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m___________________________ test_publisher_creation ____________________________\x1b[0m\n'}
+[0.951458] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/pytest/test_publisher.py\x1b[0m:52: in test_publisher_creation\n'}
+[0.951513] (demo_pkg) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[0.951593] (demo_pkg) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.951650] (demo_pkg) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.951704] (demo_pkg) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.951757] (demo_pkg) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.951811] (demo_pkg) StderrLine: {'line': b'  Warning: This process (pid=9552) is multi-threaded, use of fork() may lead to deadlocks in the child.\n'}
+[0.951865] (demo_pkg) StderrLine: {'line': b'\n'}
+[0.951919] (demo_pkg) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n'}
+[0.951973] (demo_pkg) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m node.pub_float.topic_name == \x1b[33m'\x1b[39;49;00m\x1b[33m/float_topics\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\x1b[90m\x1b[39;49;00m\n"}
+[0.952029] (demo_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE   AssertionError: assert '/float_topic' == '/float_topics'\x1b[0m\n"}
+[0.952092] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     - /float_topics\x1b[0m\n'}
+[0.952149] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ?             -\x1b[0m\n'}
+[0.952204] (demo_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     + /float_topic\x1b[0m\n'}
+[0.952258] (demo_pkg) StdoutLine: {'line': b'------ generated xml file: /home/ritu/jazzy_ws/build/demo_pkg/pytest.xml -------\n'}
+[0.952368] (demo_pkg) StdoutLine: {'line': b'\x1b[36m\x1b[1m=========================== short test summary info ============================\x1b[0m\n'}
+[0.952422] (demo_pkg) StdoutLine: {'line': b'\x1b[31mFAILED\x1b[0m test/test_flake8.py::\x1b[1mtest_flake8\x1b[0m - AssertionError: Found 43 code style errors / warnings:\n'}
+[0.952477] (demo_pkg) StdoutLine: {'line': b'\x1b[31mFAILED\x1b[0m test/test_pep257.py::\x1b[1mtest_pep257\x1b[0m - AssertionError: Found code style errors / warnings\n'}
+[0.952530] (demo_pkg) StdoutLine: {'line': b"\x1b[31mFAILED\x1b[0m test/pytest/test_publisher.py::\x1b[1mtest_publisher_creation\x1b[0m - AssertionError: assert '/float_topic' == '/float_topics'\n"}
+[0.952586] (demo_pkg) StdoutLine: {'line': b'\x1b[31m============== \x1b[31m\x1b[1m3 failed\x1b[0m, \x1b[32m3 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m4 warnings\x1b[0m\x1b[31m in 0.50s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[1.001367] (-) TimerEvent: {}
+[1.101645] (-) TimerEvent: {}
+[1.139384] (demo_pkg) CommandEnded: {'returncode': 1}
+[1.139661] (demo_pkg) TestFailure: {'identifier': 'demo_pkg'}
+[1.139681] (demo_pkg) JobEnded: {'identifier': 'demo_pkg', 'rc': 0}
+[1.140248] (-) EventReactorShutdown: {}
