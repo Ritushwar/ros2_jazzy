@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from custom_interfaces.msg import RobotStatus
+from rcl_interfaces.msg import SetParametersResult
 
 # string robot_name
 # float32 battery_level
@@ -34,6 +35,19 @@ class PublishStatus(Node):
 
         self.timer = self.create_timer(self.period, self.my_callback_fn)
         self.counter = 0
+
+        self.add_on_set_parameters_callback(self.on_param_change)  #to run every time someone calls ros2 param set on this node
+
+    def on_param_change(self, params):
+        for p in params:
+            if p.name == 'robot_name':
+                self.robot_name = p.value
+                self.get_logger().info(f'robot_name updated -> "{self.robot_name}"')
+            elif p.name == 'drain_rate':
+                self.drain_rate = p.value
+                self.get_logger().info(f'Drain rate updated -> "{self.drain_rate}"')
+        return SetParametersResult(successful=True)
+                
 
     def my_callback_fn(self):
         my_status = RobotStatus()
