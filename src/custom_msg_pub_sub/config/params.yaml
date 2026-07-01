@@ -1,0 +1,6 @@
+robotStatusPublisher:
+  ros__parameters:
+    robot_name: "Sophus"
+    publish_period: 1.0
+    initial_battery: 100.0
+    drain_rate: 0.05
