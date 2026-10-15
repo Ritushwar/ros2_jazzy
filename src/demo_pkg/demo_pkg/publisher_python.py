@@ -3,9 +3,10 @@ import rclpy  # rclpy provide the standard API
 # Node class - the parent class for building
 from rclpy.node import Node
 
-#we will send string and floats
-from std_msgs.msg import Float32
-from std_msgs.msg import String
+# we will send string and floats
+# std_msgs is a ROS 2 package containing standard message types
+from std_msgs.msg import Float32   # Float32 is a ROS 2 message type that carries a 32-bit floating-point number
+from std_msgs.msg import String    # it carries text
 
 #topic for the float message
 topic1 = "float_topic"
