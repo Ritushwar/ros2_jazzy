@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:property name="wheel_x" value="0.085"/>
-    <xacro:property name="wheel_y" value="-0.022"/>
-    <xacro:property name="wheel_z" value="-0.026"/>
+    <xacro:property name="wheel_x" value="-0.22"/>
+    <xacro:property name="wheel_y" value="-0.85"/>
+    <xacro:property name="wheel_z" value="0.295"/>
     <xacro:property name="wheel_caster" value="-0.26"/>
     <xacro:property name="motor_rotation" value="1.57"/>
     <xacro:property name="wheel_rotation" value="-3.14"/>
@@ -10,14 +10,15 @@
     <link name="base_link">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.01 0.01 0.01"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="0 3.14 0"/>
+            <origin xyz="0 0 0.57" rpy="3.142 0 1.5708"/>
             <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
         </visual>
         <collision>
+            <origin xyz="0 0 0.57" rpy="3.142 0 1.5708"/>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -31,14 +32,14 @@
         <link name="stepper_motor_${side}">
             <visual>
                 <geometry>
-                    <mesh filename="package://my_robot_description/meshes/nema17_17HS4401_b.stl" scale="1 1 1"/>
+                    <mesh filename="package://my_robot_description/meshes/nema17_17HS4401_b.stl" scale="9 9 9"/>
                 </geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <material name="grey"><color rgba="0.4 0.4 0.4 1"/></material>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="package://my_robot_description/meshes/nema17_17HS4401_b.stl" scale="1 1 1"/>
+                    <mesh filename="package://my_robot_description/meshes/nema17_17HS4401_b.stl" scale="9 9 9"/>
                 </geometry>
             </collision>
             <inertial>
@@ -50,14 +51,14 @@
         <link name="wheel_${side}">
             <visual>
                 <geometry>
-                    <mesh filename="package://my_robot_description/meshes/wheel_v1.stl" scale="0.001 0.001 0.001"/>
+                    <mesh filename="package://my_robot_description/meshes/wheel_v1.stl" scale="0.01 0.01 0.01"/>
                 </geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="package://my_robot_description/meshes/wheel_v1.stl" scale="0.001 0.001 0.001"/>
+                    <mesh filename="package://my_robot_description/meshes/wheel_v1.stl" scale="0.01 0.01 0.01"/>
                 </geometry>
             </collision>
             <inertial>
@@ -69,17 +70,15 @@
         <joint name="motor_joint_${side}" type="fixed">
             <parent link="base_link"/>
             <child link="stepper_motor_${side}"/>
-            <origin xyz="${reflect*wheel_x} ${wheel_y} ${wheel_z}" rpy="0 ${reflect*motor_rotation} 0"/>
+            <origin xyz="${reflect*wheel_x} ${wheel_y} ${wheel_z}" rpy="${reflect*motor_rotation} 0 0"/>
             <axis xyz="0 0 0"/>
         </joint>
 
-        <joint name="wheel_joint_${side}" type="revolute">
+        <joint name="wheel_joint_${side}" type="continuous">
             <parent link="stepper_motor_${side}"/>
             <child link="wheel_${side}"/>
             <origin xyz="0 0 0.026" rpy="0 ${reflect*wheel_rotation} 0"/>
             <axis xyz="0 0 1"/>
-            <limit effort="20" velocity="30"/>
-            <dynamics damping="0.1" friction="0.0"/>
         </joint>
     </xacro:macro>
 

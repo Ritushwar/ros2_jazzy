@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot name="sophus" xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:property name="wheel_x" value="0.85"/>
-    <xacro:property name="wheel_y" value="-0.22"/>
-    <xacro:property name="wheel_z" value="-0.26"/>
+    <xacro:property name="wheel_x" value="-0.22"/>
+    <xacro:property name="wheel_y" value="-0.85"/>
+    <xacro:property name="wheel_z" value="0.295"/>
     <xacro:property name="wheel_caster" value="-0.26"/>
     <xacro:property name="motor_rotation" value="1.57"/>
     <xacro:property name="wheel_rotation" value="-3.14"/>
@@ -12,12 +12,12 @@
             <geometry>
                 <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.01 0.01 0.01"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="0 3.14 0"/>
+            <origin xyz="0 0 0.57" rpy="3.142 0 1.5708"/>
             <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="package://my_robot_description/meshes/base_plate_v1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
         <inertial>
@@ -53,7 +53,7 @@
                     <mesh filename="package://my_robot_description/meshes/wheel_v1.stl" scale="0.01 0.01 0.01"/>
                 </geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
-                <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
+                <material name="red"><color rgba="0.9 0 0 1"/></material>
             </visual>
             <collision>
                 <geometry>
@@ -69,14 +69,14 @@
         <joint name="motor_joint_${side}" type="fixed">
             <parent link="base_link"/>
             <child link="stepper_motor_${side}"/>
-            <origin xyz="${reflect*wheel_x} ${wheel_y} ${wheel_z}" rpy="0 ${reflect*motor_rotation} 0"/>
+            <origin xyz="${wheel_x} ${reflect*wheel_y} ${wheel_z}" rpy="${reflect*motor_rotation} 0 0"/>
             <axis xyz="0 0 0"/>
         </joint>
 
         <joint name="wheel_joint_${side}" type="continuous">
             <parent link="stepper_motor_${side}"/>
             <child link="wheel_${side}"/>
-            <origin xyz="0 0 0.26" rpy="0 ${reflect*wheel_rotation} 0"/>
+            <origin xyz="0 0 0.22" rpy="0 ${reflect*wheel_rotation} 0"/>
             <axis xyz="0 0 1"/>
         </joint>
     </xacro:macro>
@@ -84,14 +84,14 @@
     <link name="caster_wheel">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/Caster_Wheel_V2.stl" scale="8.5 8.5 8.5"/>
+                <mesh filename="package://my_robot_description/meshes/Caster_Wheel_V2.stl" scale="7.5 7.5 7.5"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
+            <material name="green"><color rgba="0 0.9 0 1"/></material> 
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/Caster_Wheel_V2.stl" scale="8.5 8.5 8.5"/>
+                <mesh filename="package://my_robot_description/meshes/Caster_Wheel_V2.stl" scale="7.5 7.5 7.5"/>
             </geometry>
         </collision>
         <inertial>
@@ -103,7 +103,7 @@
     <joint name="caster_joint" type="fixed">
         <parent link="base_link"/>
         <child link="caster_wheel"/>
-        <origin xyz="0 1.02 -0.22" rpy="0 0 0"/>
+        <origin xyz="1.03 0 0.36" rpy="0 0 1.57"/>
         <axis xyz="0 0 1"/>
     </joint>
 
