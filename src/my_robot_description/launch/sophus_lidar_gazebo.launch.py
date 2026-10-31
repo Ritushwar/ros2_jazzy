@@ -7,8 +7,8 @@ from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 
 # ---- World selection ----
-WORLD_FILE = 'empty_world.sdf'    # CHANGED: was 'empty_world.sdf'
-WORLD_NAME = 'empty'              # CHANGED: must match <world name="..."> in the SDF
+WORLD_FILE = 'cafe_world.sdf'    # CHANGED: was 'empty_world.sdf'
+WORLD_NAME = 'cafe'              # CHANGED: must match <world name="..."> in the SDF
 
 def generate_launch_description():
     pkg_share = get_package_share_directory('my_robot_description')
