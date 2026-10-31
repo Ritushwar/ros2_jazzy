@@ -1,30 +1,40 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="sophus" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Included AFTER sophus_core.xacro, so wheel_radius / wheel_half_track are visible here -->
 
-    <xacro:property name="wheel_separation" value="${2*0.022}"/>
-    <xacro:property name="wheel_diameter" value="0.05"/>
+    <xacro:property name="wheel_separation" value="${2*wheel_half_track}"/>   <!-- 2.14 m (was 2*1 = 2) -->
     <xacro:property name="max_wheel_torque" value="20"/>
-    <xacro:property name="max_wheel_accel" value="1.0"/>
+    <xacro:property name="max_wheel_accel" value="2.0"/>
+
+    <!-- Friction: grippy wheels, slippery caster -->
+    <gazebo reference="wheel_left">
+        <mu1>1.0</mu1><mu2>1.0</mu2>
+    </gazebo>
+    <gazebo reference="wheel_right">
+        <mu1>1.0</mu1><mu2>1.0</mu2>
+    </gazebo>
+    <gazebo reference="caster_wheel">
+        <mu1>0.0</mu1><mu2>0.0</mu2>
+    </gazebo>
 
     <gazebo>
-        <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">   <!--precompiled shared library-->
+        <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
             <left_joint>wheel_joint_left</left_joint>
             <right_joint>wheel_joint_right</right_joint>
 
             <wheel_separation>${wheel_separation}</wheel_separation>
-            <wheel_diameter>${wheel_diameter}</wheel_diameter>
+            <wheel_radius>${wheel_radius}</wheel_radius>
 
             <max_wheel_torque>${max_wheel_torque}</max_wheel_torque>
             <max_wheel_acceleration>${max_wheel_accel}</max_wheel_acceleration>
 
-            <publish_odom>false</publish_odom>
-            <publish_odom_tf>false</publish_odom_tf>
-            <publish_wheel_tf>false</publish_wheel_tf>
+            <topic>cmd_vel</topic>
 
-            <odometry_topic>odom</odometry_topic>
-            <odometry_frame>odom</odometry_frame>
-            <robot_base_frame>base_link</robot_base_frame>
-            <update_rate>50</update_rate>
+            <odom_topic>odom</odom_topic>
+            <tf_topic>tf</tf_topic>
+            <frame_id>odom</frame_id>
+            <child_frame_id>base_link</child_frame_id>
+            <odom_publisher_frequency>50</odom_publisher_frequency>
         </plugin>
 
         <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
