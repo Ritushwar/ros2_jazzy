@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="sophus" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <gazebo reference="lidar_link">
+        <sensor name="gpu_lidar" type="gpu_lidar">
+
+            <!-- Sensor position relative to lidar_link -->
+            <pose>0 0 0 0 0 0</pose>
+
+            <!-- Publish scan data -->
+            <topic>/scan</topic>
+            <gz_frame_id>lidar_link</gz_frame_id>
+            <update_rate>10</update_rate>
+
+            <lidar>
+                <scan>
+                    <horizontal>
+                        <!-- Full 360-degree scan -->
+                        <samples>360</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-3.14159</min_angle>
+                        <max_angle>3.14159</max_angle>
+                    </horizontal>
+                </scan>
+
+                <range>
+                    <min>0.12</min>
+                    <max>8.0</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </lidar>
+
+            <!-- Enable sensor simulation -->
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+        </sensor>
+    </gazebo>
+</robot>
