@@ -4,7 +4,7 @@ from launch import LaunchDescription
 from launch.actions import ExecuteProcess
 from launch.substitutions import Command
 from launch_ros.actions import Node
-
+from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
     pkg_share = get_package_share_directory('my_robot_description')
@@ -23,16 +23,18 @@ def generate_launch_description():
     )
 
     robot_description = Command(['xacro ', xacro_file])
+    robot_description_param = ParameterValue(robot_description, value_type=str)
 
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'robot_description': robot_description}],
+        parameters=[{'robot_description': robot_description_param,
+                     'use_sim_time': True}],          # follow Gazebo /clock
         output='screen'
     )
 
     gz_sim = ExecuteProcess(
-        cmd=['bash', '-c', 'echo "GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH"; exec gz sim -r empty.sdf'],
+        cmd=['bash', '-c', 'exec gz sim -r empty.sdf'],
         output='screen',
         env=gz_env,
     )
@@ -44,7 +46,7 @@ def generate_launch_description():
             '-world', 'empty',
             '-topic', 'robot_description',
             '-name', 'sophus',
-            '-z', '0.07'
+            '-z', '0.05'
         ],
         output='screen'
     )
@@ -52,7 +54,8 @@ def generate_launch_description():
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-        parameters=[{'config_file': bridge_config}],
+        parameters=[{'config_file': bridge_config,
+                     'use_sim_time': True}],
         output='screen'
     )
 
@@ -61,13 +64,4 @@ def generate_launch_description():
         gz_sim,
         spawn_entity,
         bridge,
-        Node(
-            package='robot_state_publisher',
-            executable='robot_state_publisher',
-            parameters=[robot_description]
-        ),
-        Node(
-            package='joint_state_publisher_gui',
-            executable='joint_state_publisher_gui'
-        ),
     ])
