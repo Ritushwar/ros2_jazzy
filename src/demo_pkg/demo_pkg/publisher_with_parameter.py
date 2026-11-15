@@ -7,7 +7,6 @@ class MyPublisherNode(Node):
     def __init__(self):
         super().__init__("publisher_with_parameter")
         self.declare_parameter("robot_name", "Sophus")        # Add a parameter with a default value
-        self.text_ = self.get_parameter("robot_name").value   # Copy the parameter value into the text_ variable
 
         self.publisher_ = self.create_publisher(String, 'topic', 10)
         self.timer = self.create_timer(0.5, self.timer_callback)
@@ -16,6 +15,7 @@ class MyPublisherNode(Node):
         self.get_logger().info("Publisher has been started.")
 
     def timer_callback(self):
+        self.text_ = self.get_parameter("robot_name").value   # Copy the parameter value into the text_ variable
         self.msg.data = f"{self.text_}: {self.i}"               # use the text_ variable for the String message
         self.i += 1
         self.get_logger().info(f'Name of Robot: "{self.msg.data}"')
