@@ -8,7 +8,10 @@ def generate_launch_description():
     publisher_node = Node(
         package="demo_pkg",
         executable="py_publisher",
-        name="demo_publisher"
+        name="demo_publisher",
+        remappings=[
+            ("string_topic", "text_topic")
+        ]
     )
 
     subscriber_node = Node(
