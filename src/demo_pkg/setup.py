@@ -23,7 +23,8 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [ 'publisher = demo_pkg.publisher_python:main',
-                             'subscriber = demo_pkg.subscriber_python:main',],
+        'console_scripts': ['py_publisher = demo_pkg.publisher_python:main',
+                            'py_subscriber = demo_pkg.subscriber_python:main',
+        ],
     },
 )
