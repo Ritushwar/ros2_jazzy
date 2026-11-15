@@ -26,6 +26,7 @@ setup(
         'console_scripts': ['py_publisher = demo_pkg.publisher_python:main',
                             'py_subscriber = demo_pkg.subscriber_python:main',
                             'para_publisher = demo_pkg.publisher_with_parameter:main',
+                            'timer_period_pub = demo_pkg.parameter_advanced:main',
         ],
     },
 )
