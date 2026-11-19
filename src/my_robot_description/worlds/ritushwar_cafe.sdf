@@ -1,0 +1,949 @@
+<sdf version='1.10'>
+  <world name='ritushwar_cafe'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>200 200</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>5.4722222395996614 -7.2723011228392025 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_0'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>2.5015199184417725 -7.2732968330383301 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_1'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-0.49797418497850199 -7.2757210301660287 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_2'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-3.4525682926177979 -7.2598400115966797 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_3'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-6.4007601737976074 -7.2668900489807129 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_4'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-9.150059700012207 -7.3022499084472656 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_5'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>7.2439355850219727 -6.0436611175537109 -0.00852683652192332 -0.0061098503226316983 -0.0017430099314572104 -1.6011399870369611</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_6'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>1.215471625328064 -5.538581371307373 8.1770554771765092e-09 -0.035625699859527661 -2.9907023385566944e-10 -1.5445500225392279</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_7'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>7.2905092239379883 -3.0492680072784424 1.5543122344752192e-15 0 0 -1.561429998720903</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='brick_box_3x1x3_8'>
+      <static>true</static>
+      <link name='chassis'>
+        <pose>0 0 1.5 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 0.5 3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 0.5 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+            <pbr>
+              <metal>
+                <albedo_map>model://brick_box_3x1x3/materials/textures/simple_box.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>7.2866024971008301 -0.079934403300285339 6.9595562308677472e-06 7.2274295452279801e-06 -8.8038304139904775e-05 -1.5737499793965808</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_9</name>
+      <pose>7.2634639739990234 2.9179673194885254 0 0 0 -1.5573099917211026</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_10</name>
+      <pose>7.255063533782959 5.908998966217041 0 0 0 -1.5645099458775222</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_11</name>
+      <pose>-4.7415347099304199 -5.5127115249633789 0 0 0 1.6126500207573378</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_12</name>
+      <pose>1.2100108861923218 -2.5410380363464355 -0.00069667253410443664 -0.022325700512891324 0.012747201033267061 -1.561719982463551</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table</name>
+      <pose>-2.7319137465111383 -5.4189527227857512 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_0</name>
+      <pose>-0.66736178158435655 -5.4515283612941818 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair</name>
+      <pose>-2.707550048828125 -5.9457912445068359 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_0</name>
+      <pose>-0.69843602180480957 -6.0921869277954102 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_1</name>
+      <pose>-0.83157840616354606 -2.4603676206311413 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_2</name>
+      <pose>-2.7086231278537132 -2.4141375316553093 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_1</name>
+      <pose>-2.6587998867034912 -3.058260440826416 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_2</name>
+      <pose>-0.83094399296697796 -3.0604138995075201 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_3</name>
+      <pose>-3.4141995906829834 -5.3958172798156738 0 0 0 -1.5506599935174163</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_4</name>
+      <pose>0.10987193137407303 -5.3690919876098633 0 0 0 1.5184000313992829</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_5</name>
+      <pose>-0.18382732570171356 -2.493114709854126 0 0 0 1.5254000207961818</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_6</name>
+      <pose>-3.4232063293457031 -2.4109306335449219 0 0 0 -1.4325799647188835</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_13</name>
+      <pose>0.02792349915168213 -0.80757657944742611 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_14</name>
+      <pose>-4.808135986328125 -2.534738302230835 -2.2204460492503131e-16 0 0 -1.5644600431948834</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_15</name>
+      <pose>-4.7140054702758789 -0.87303197383880615 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_3</name>
+      <pose>-6.8119029022498445 -4.9901686184921319 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_4</name>
+      <pose>-8.8258274000603762 -4.7126094183275162 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_5</name>
+      <pose>-6.7846411029435405 -2.715506205855724 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_6</name>
+      <pose>-8.7438558428913815 -2.4838465451739604 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_7</name>
+      <pose>-6.864974279790137 -5.7284503382602718 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_8</name>
+      <pose>-8.8624618662488981 -5.3668433884420041 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_9</name>
+      <pose>-6.8306280529805967 -3.3117266121631155 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_10</name>
+      <pose>-8.8009039791381145 -3.0296148911442278 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_11</name>
+      <pose>-5.9851698875427246 -5.0888500213623047 0 0 0 1.4159381904802184</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_12</name>
+      <pose>-9.6594295501708984 -4.9019298553466797 0 0 0 -1.5734198845725558</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_13</name>
+      <pose>-9.4622697830200195 -2.5593700408935547 0 0 0 -1.5300570627997414</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_14</name>
+      <pose>-6.0583600997924805 -2.8491001129150391 0 0 0 1.4509748413998271</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_16</name>
+      <pose>-10.380096435546875 -5.5055584907531738 2.2204460492503131e-16 0 0 -1.5651599369449141</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_17</name>
+      <pose>-10.362615585327148 -2.5775420665740967 2.2204460492503131e-16 0 0 -1.5885900325346551</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_18</name>
+      <pose>-9.1962270736694336 -0.89153200387954712 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_19</name>
+      <pose>-10.418516159057617 0.85210925340652466 0 0 0 -1.5678800167031925</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_20</name>
+      <pose>-10.399992942810059 3.8443257808685303 2.2204460492503131e-16 0 0 -1.5848299939921651</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_21</name>
+      <pose>5.9706635776993053 7.6327254330867227 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_22</name>
+      <pose>3.0122163368621662 7.591165041106219 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_23</name>
+      <pose>0.033445801585912704 7.5883255004882812 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_24</name>
+      <pose>-2.9290049076080322 7.5782899856567383 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_25</name>
+      <pose>-5.9197230339050293 7.5825099945068359 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_26</name>
+      <pose>-8.9001120033901771 7.5787897248557066 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_27</name>
+      <pose>1.1844372749328613 5.9022746086120605 0.0042663798667490482 0 0 -1.5634399992968107</pose>
+    </include>
+    <include>
+      <uri>model://brick_box_3x1x3</uri>
+      <name>brick_box_3x1x3_28</name>
+      <pose>2.9396220179539965 -4.4972473065304035 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://first_2015_trash_can</uri>
+      <name>first_2015_trash_can</name>
+      <pose>3.0651452413322273 -6.4173700896638337 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://first_2015_trash_can</uri>
+      <name>first_2015_trash_can_0</name>
+      <pose>4.0260546993070889 -6.5235293073332024 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Table</uri>
+      <name>Table</name>
+      <pose>3.0342652595888877 4.8836977275910733 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Table</uri>
+      <name>Table_0</name>
+      <pose>4.8644230451471735 4.8327856890372534 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_15</name>
+      <pose>4.7964463233947754 5.9527912139892578 0 0 0 -3.1329400000661893</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_16</name>
+      <pose>3.1555700302124023 5.6652498245239258 0 0 0 -3.1018025393169246</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_7</name>
+      <pose>-1.4001317024230957 5.1364498138427734 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Sofa</uri>
+      <name>Sofa</name>
+      <pose>0.12249600142240524 5.3295698165893555 0 0 0 3.128489990695841</pose>
+    </include>
+    <include>
+      <uri>model://Sofa</uri>
+      <name>Sofa_0</name>
+      <pose>-1.5101255178451538 6.7026066780090332 0 0 0 -1.5503500291478844</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_8</name>
+      <pose>-3.8896895122935193 5.1069782882695467 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_9</name>
+      <pose>-6.0067716594906537 5.0174224442332367 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table_10</name>
+      <pose>-7.9718593927859382 4.9181902445732337 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_17</name>
+      <pose>-3.9195499420166016 6.0563597679138184 0 0 0 -3.100553156584835</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_18</name>
+      <pose>-6.0289502143859863 5.9907798767089844 0 0 0 -3.0960347739066187</pose>
+    </include>
+    <include>
+      <uri>model://Office_Chair</uri>
+      <name>OfficeChair_19</name>
+      <pose>-8.0580902099609375 5.7648200988769531 0 0 0 -3.1261566823905236</pose>
+    </include>
+    <include>
+      <uri>model://Table</uri>
+      <name>Table_1</name>
+      <pose>-4.9482715450599333 0.14946819851975368 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Table</uri>
+      <name>Table_2</name>
+      <pose>-8.7570139266756044 0.24633367394267203 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://person_standing</uri>
+      <name>person_standing</name>
+      <pose>4.7580504417419434 5.4828300476074219 0 0 0 0</pose>
+    </include>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.89999997615814209</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
